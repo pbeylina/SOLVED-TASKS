@@ -1,6 +1,5 @@
 # SOLVED-TASKS
-*task 1
+*task 2
 ```javascript
 let a = 123;
-console.log (a)
 ```
