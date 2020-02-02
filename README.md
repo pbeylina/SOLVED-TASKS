@@ -82,3 +82,43 @@ function equal5() {
   return a % b;
 }
 ```
+
+[For Twins: 2. Math operations](https://www.codewars.com/kata/59c287b16bddd291c700009a)
+```
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  let v = (bottleLength - rimLength) * Math.sqrt(2 * Math.pow(radius,2)) * Math.sqrt(2 * Math.pow(radius,2));
+  return Math.round(v);
+}
+```
+
+[Third Angle of a Triangle](https://www.codewars.com/kata/5a023c426975981341000014/train/javascript/5e0067487f79bd00224aed0a)
+```
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
+```
+
+[Sum of angles](https://www.codewars.com/kata/5a03b3f6a1c9040084001765/train/javascript/5e00699adf8a1200166c854b)
+```
+function angle(n) {
+ let sumAngle = 180 * (n - 2); 
+ return sumAngle;
+}
+```
+
+[Breaking chocolate problem](https://www.codewars.com/kata/534ea96ebb17181947000ada)
+```
+function breakChocolate(n,m) {
+  const crack = (n * m) - 1;
+  if (n > 0 && m > 0)  return crack;
+  else return 0; 
+}
+```
+
+[I love you, a little , a lot, passionately ... not at all](https://www.codewars.com/kata/57f24e6a18e9fad8eb000296)
+```
+function howMuchILoveYou(nbPetals) {
+  let phrases = ["I love you","a little","a lot","passionately","madly","not at all"];
+return phrases [(nbPetals - 1) % phrases.length];
+}
+```
