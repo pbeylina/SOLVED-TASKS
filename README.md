@@ -122,3 +122,27 @@ function howMuchILoveYou(nbPetals) {
 return phrases [(nbPetals - 1) % phrases.length];
 }
 ```
+
+[Super Duper Easy](https://www.codewars.com/kata/55a5bfaa756cfede78000026/train/javascript/5e01a8890d5bc90032a407d5)
+```javascript
+function problem(x) {
+  const res = x * 50 + 6;
+  if (typeof (x) === 'string') return 'Error';
+  else return res;
+}
+```
+
+[Chuck Norris VII - True or False? (Beginner)](https://www.codewars.com/kata/570669d8cb7293a2d1001473/train/javascript/5e01aa3b2964c8002363e2e0)
+```javascript
+function ifChuckSaysSo() {
+  return !true;
+}
+```
+[Type of sum](https://www.codewars.com/kata/5a2e9ae2b6cfd7692a0000ba/train/javascript/5e01aadb5654a90014ff49e5)
+```javascript
+function typeOfSum(a, b) {
+  sum = a + b;
+  if (typeof sum === 'string') return 'string';
+  else  return 'number';
+}
+```
