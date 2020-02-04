@@ -138,6 +138,7 @@ function ifChuckSaysSo() {
   return !true;
 }
 ```
+
 [Type of sum](https://www.codewars.com/kata/5a2e9ae2b6cfd7692a0000ba/train/javascript/5e01aadb5654a90014ff49e5)
 ```javascript
 function typeOfSum(a, b) {
