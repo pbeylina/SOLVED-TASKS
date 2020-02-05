@@ -147,3 +147,58 @@ function typeOfSum(a, b) {
   else  return 'number';
 }
 ```
+
+[Convert a Number to a String!](https://www.codewars.com/kata//5265326f5fda8eb1160004c8)
+```javascript
+function numberToString(num) {
+   return num.toString();
+}
+```
+
+[Convert a String to a Number!](https://www.codewars.com/kata//544675c6f971f7399a000e79)
+```javascript
+var stringToNumber = function(str) { 
+  return + str;
+}
+```
+
+[Sum The Strings](https://www.codewars.com/kata//5966e33c4e686b508700002d)
+```javascript
+function sumStr(a,b) {
+  const sumStr = +a + +b;
+  if( a === '' && b === '') return '0';
+  else
+  return (sumStr + '');
+}
+```
+
+[Convert a Boolean to a String](https://www.codewars.com/kata//551b4501ac0447318f0009cd)
+```javascript
+function booleanToString(b){
+  if (b === true) return "true";
+  else 
+  return "false";
+}
+```
+
+[Number toString](https://www.codewars.com/kata//53934feec44762736c00044b)
+```javascript
+let a = 123;
+a = a + ''; 
+console.log (a); 
+```
+
+[Discover The Original Price](https://www.codewars.com/kata//552564a82142d701f5001228)
+```javascript
+function discoverOriginalPrice(discountedPrice, salePercentage) {
+  let retail = discountedPrice + (discountedPrice * salePercentage) / (100 - salePercentage);
+  return Math.trunc(retail * 100) / 100; 
+}
+```
+
+[Formatting decimal places #0](https://www.codewars.com/kata//5641a03210e973055a00000d)
+```javascript
+function twoDecimalPlaces(n) {
+  return +n.toFixed(2);
+}
+```
