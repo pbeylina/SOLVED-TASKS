@@ -202,3 +202,79 @@ function twoDecimalPlaces(n) {
   return +n.toFixed(2);
 }
 ```
+
+[Area of a Square](https://www.codewars.com/kata//5748838ce2fab90b86001b1a)
+```javascript
+function squareArea(A) {
+  return +((((A * 4) / Math.PI) / 2) ** 2).toFixed(2);
+}
+```
+
+[Keep Hydrated!](https://www.codewars.com/kata//582cb0224e56e068d800003c)
+```javascript
+function litres(time) {
+  return  Math.trunc(((500 / 60) * (time * 60))/1000);
+}
+```
+
+[Century From Year](https://www.codewars.com/kata//5a3fe3dde1ce0e8ed6000097)
+```javascript
+function century(year) {
+  if (year % 100 > 0) return Math.floor(year / 100) + 1;
+  else return Math.floor(year / 100);
+}
+```
+
+[Count Odd Numbers below n](https://www.codewars.com/kata//59342039eb450e39970000a6)
+```javascript
+function oddCount(n) {
+  return  Math.floor(n / 2)
+}
+```
+
+[How many times should I go?](https://www.codewars.com/kata//57efcb78e77282f4790003d8)
+```javascript
+function howManyTimes(annualPrice, individualPrice) {
+  const visits = Math.ceil(annualPrice / individualPrice);
+  return visits;
+}
+```
+[Return the closest number multiple of 10](https://www.codewars.com/kata//58249d08b81f70a2fc0001a4)
+```javascript
+const closestMultiple10 = num => {
+  if (num % 10 < 5)  return num - num % 10
+  else if (num % 10 === 5) return num + num % 10;
+  else return num + (10 - num % 10 );
+};
+```
+
+[Keep up the hoop](https://www.codewars.com/kata//55cb632c1a5d7b3ad0000145)
+```javascript
+function hoopCount (n) {
+  if (n > 0 && n < 10) return "Keep at it until you get it";
+  else return "Great, now move on to tricks";
+}
+```
+
+[Simple Comparison?](https://www.codewars.com/kata//57f6ecdfcca6e045d2001207)
+```javascript
+function add(a, b) {
+  return (a == b) ? true : false;
+}
+```
+
+[Is he gonna survive?](https://www.codewars.com/kata//59ca8246d751df55cc00014c)
+```javascript
+function hero(bullets, dragons) {
+  let hero = (bullets / dragons >= 2) ? true : false;
+  return hero;
+}
+```
+
+[Even or Odd](https://www.codewars.com/kata//53da3dbb4a5168369a0000fe)
+```javascript
+function even_or_odd(number) {
+  if (number % 2) return "Odd";
+  else return "Even";
+}
+```
