@@ -278,3 +278,58 @@ function even_or_odd(number) {
   else return "Even";
 }
 ```
+
+[Determine offspring sex based on genes XX and XY chromosomes
+](https://www.codewars.com/kata//56530b444e831334c0000020)
+```javascript
+function chromosomeCheck(sperm) {
+  if (sperm === 'XX') return "Congratulations! You're going to have a daughter.";
+  else return "Congratulations! You're going to have a son.";
+}
+```
+
+[What's the real floor?](https://www.codewars.com/kata//574b3b1599d8f897470018f6)
+```javascript
+function getRealFloor(n) {
+  if (n <= 0) return n;
+  else if (n === 15) return 13;
+  else if (n > 15) return n -2;
+  else return n -1;
+}
+```
+
+[Calculate BMI](https://www.codewars.com/kata//57a429e253ba3381850000fb)
+```javascript
+function bmi(weight, height) {
+ let b = weight/(height * height);
+ if (b <= 18.5) return "Underweight";
+   else if (b <= 25.0) return "Normal";
+   else if (b <= 30.0) return "Overweight";
+   else if (b > 30.0) return "Obese";
+}
+```
+
+[Alan Partridge II - Apple Turnover](https://www.codewars.com/kata//580a094553bd9ec5d800007d)
+```javascript
+function apple(x) {
+  if (Math.pow(x, 2) > 1000) return 'It\'s hotter than the sun!!';
+  else return 'Help yourself to a honeycomb Yorkie for the glovebox.';
+}
+```
+
+[Simple multiplication](https://www.codewars.com/kata//583710ccaa6717322c000105)
+```javascript
+function simpleMultiplication(number) {
+  if (number % 2) return number * 9;
+  else return number * 8;
+}
+```
+
+[Sleigh Authentication](https://www.codewars.com/kata//52adc142b2651f25a8000643)
+```javascript
+function Sleigh() {}
+  Sleigh.prototype.authenticate = function(name, password) {
+  if (name === "Santa Claus" && password === "Ho Ho Ho!") return true;
+  else return false;
+  };
+```
