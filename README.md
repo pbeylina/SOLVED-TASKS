@@ -333,3 +333,73 @@ function Sleigh() {}
   else return false;
   };
 ```
+
+[Is n divisible by x and y?](https://www.codewars.com/kata//5545f109004975ea66000086)
+```javascript
+function isDivisible(n, x, y) {
+  if (n % x === 0 && n % y === 0) return true;
+  else return false;
+}
+
+```
+
+[Is this a triangle?](https://www.codewars.com/kata//56606694ec01347ce800001b)
+```javascript
+function isTriangle(a, b, c) {
+  if (a + b > c && b + c > a && a + c > b  )return true;
+  else return false;
+}
+```
+
+[Rock Paper Scissors!](https://www.codewars.com/kata//5672a98bdbdd995fad00000f)
+```javascript
+const rps = (p1, p2) => {
+  if (p1 === 'scissors' && p2 === 'paper'|| p1 === 'rock' && p2 === 'scissors'|| p1 === 'paper' && p2 === 'rock');
+  return 'Player 1 won!';
+  else if (p1 === p2) return 'Draw!';
+  else return 'Player 2 won!';
+};
+```
+[L1: Set Alarm](https://www.codewars.com/kata//568dcc3c7f12767a62000038)
+```javascript
+function setAlarm(employed, vacation) {
+  return (employed === true && vacation === false) ? true : false; 
+}
+```
+
+[Can we divide it?](https://www.codewars.com/kata//5a2b703dc5e2845c0900005a)
+```javascript
+function isDivideBy(number, a, b) {
+return (number % a === 0 && number % b === 0) ? true : false;
+}
+```
+
+[Student's Final Grade](https://www.codewars.com/kata//5ad0d8356165e63c140014d4)
+```javascript
+function finalGrade (exam, projects) {
+  if (exam > 90 || projects > 10) return 100;
+  else if (exam > 75 && projects >= 5) return 90;
+  else if (exam > 50 && projects >= 2) return 75;
+  else return 0;
+}
+```
+
+[Calculate Two People's Individual Ages](https://www.codewars.com/kata//58e0bd6a79716b7fcf0013b1)
+```javascript
+function getAges (sum, difference) {
+let age1 = sum - (sum - difference) / 2;
+let age2 = (sum - difference) / 2;
+let ages1 = [age1, age2];
+let ages2 = [age2, age1];
+if (sum <= 0 || difference < 0 || age1 < 0 || age2 < 0) return null;
+else if (age1 > age2 && age1 > 0 && age2 > 0 || sum === difference) return ages1;
+else return ages2;
+}
+```
+
+[Opposite number](https://www.codewars.com/kata//56dec885c54a926dcd001095)
+```javascript
+function opposite(number) {
+  return -number;
+}
+```
