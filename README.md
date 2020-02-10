@@ -403,3 +403,76 @@ function opposite(number) {
   return -number;
 }
 ```
+[Convert boolean values to strings 'Yes' or 'No'.](https://www.codewars.com/kata//53369039d7ab3ac506000467)
+```javascript
+function boolToWord (bool) {
+  return  bool === true ? "Yes" : "No";
+}
+```
+
+[Be Concise I - The Ternary Operator](https://www.codewars.com/kata//56f3f6a82010832b02000f38)
+```javascript
+function describeAge (n) {
+s="You\'re a(n) "
+k=s+'kid'
+t=s+'teenager'
+a=s+'adult'
+e=s+'elderly'
+return n<13?k:n>12&n<18?t:n>16&n<65?a:e
+}
+```
+[101 Dalmatians - squash the bugs, not the dogs!](https://www.codewars.com/kata//56f6919a6b88de18ff000b36)
+```javascript
+function howManyDalmatians (n) {
+let dogs = ["Hardly any", "More than a handful!", "Woah that\'s a lot of dogs!", "101 DALMATIANS!!!"];  
+return n < 11 ? dogs[0] : n > 10 & n < 51 ? dogs[1] : n > 50 & n < 101 ? dogs[2] : n === 101 ? dogs[3] : dogs[2];
+}
+```
+
+[Do I get a bonus?](https://www.codewars.com/kata//56f6ad906b88de513f000d96)
+```javascript
+function bonusTime (salary, bonus) {
+  return bonus === true ? "\u00A3" + salary * 10  : "\u00A3" + salary;
+}
+```
+
+[Training JS #7: if..else and ternary operator](https://www.codewars.com/kata//57202aefe8d6c514300001fd)
+```javascript
+function saleHotdogs (n) {
+  return n < 5 ? n * 100 : n >= 5 & n < 10 ? n * 95 : n * 90;
+}
+```
+
+[Get Planet Name By ID](https://www.codewars.com/kata//515e188a311df01cba000003)
+```javascript
+function getPlanetName (id) {
+  var name;
+  switch(id) {
+    case 1:
+      name = 'Mercury'
+      break;
+    case 2:
+      name = 'Venus'
+      break;
+    case 3:
+      name = 'Earth'
+      break;
+    case 4:
+      name = 'Mars'
+      break;
+    case 5:
+      name = 'Jupiter'
+      break;
+    case 6:
+      name = 'Saturn'
+      break;
+    case 7:
+      name = 'Uranus'
+      break;
+    case 8:
+      name = 'Neptune'
+      break;    
+  }  
+  return name;
+}
+```
