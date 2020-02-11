@@ -476,3 +476,70 @@ function getPlanetName (id) {
   return name;
 }
 ```
+[Basic Mathematical Operations](https://www.codewars.com/kata//57356c55867b9b7a60000bd7)
+```javascript
+function basicOp(o, v1, v2) {
+  return o === '+' ? v1 + v2 : o === '-' ? v1 - v2 : o === '*' ? v1 * v2 : o === '/' ? v1 / v2 : false;
+}
+```
+
+[Switch it Up!](https://www.codewars.com/kata//5808dcb8f0ed42ae34000031)
+```javascript
+function switchItUp (number) {
+  switch (number) {
+  case 0: return "Zero";
+  case 1: return "One";
+  case 2: return "Two";
+  case 3: return "Three";
+  case 4: return "Four";
+  case 5: return "Five";
+  case 6: return "Six"; 
+  case 7: return "Seven";
+  case 8: return "Eight";
+  case 9: return "Nine";
+  }
+}
+```
+
+[simple calculator](https://www.codewars.com/kata//5810085c533d69f4980001cf)
+```javascript
+function calculator (a, b, sign) {
+  switch (a, b, sign) {
+  case a, b, "+" : return a + b;
+  break;
+  case a, b, "-" : return a - b;
+  break;
+  case a, b, "*" : return a * b;
+  break;
+  case a, b, "/" : return a / b;
+  break;
+  case a, b, " " : "unknown value";
+  break;
+  default : return "unknown value";
+  break;
+  }
+}
+```
+
+[No zeros for heros](https://www.codewars.com/kata//570a6a46455d08ff8d001002)
+```javascript
+function noBoringZeros (n) {
+  let i = 0;
+  while (n % 10 === 0 && i <= 10) { 
+   i++;
+   n = n * 0.1;
+  }
+  return n;
+}
+```
+
+[Power of two](https://www.codewars.com/kata//534d0a229345375d520006a0)
+```javascript
+function isPowerOfTwo (n) {
+  let i = 1;
+  while (n > 1) { 
+  n = n / 2;
+  }
+  return n === 1;
+}
+```
