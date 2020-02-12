@@ -543,3 +543,56 @@ function isPowerOfTwo (n) {
   return n === 1;
 }
 ```
+
+[Powers of 3](https://www.codewars.com/kata//57be674b93687de78c0001d9)
+```javascript
+function largestPower (n) {
+  let k = 0;
+  while (Math.pow(3, k) < n) {
+  ++k;
+  }
+  return Math.max(k) - 1; 
+}
+```
+
+[Difference Of Squares](https://www.codewars.com/kata//558f9f51e85b46e9fa000025)
+```javascript
+function differenceOfSquares (n) {
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 1; i <= n; ++i) {
+  sum1 += i;
+  sum2 += Math.pow(i, 2)
+  }
+  {
+  sum1 = Math.pow(sum1, 2);
+  return sum1 - sum2;
+  }
+}
+```
+
+[Factorial](https://www.codewars.com/kata//57a049e253ba33ac5e000212)
+```javascript
+function factorial (n) {
+  f = 1; i = 1;
+  while ( i <= n) {
+  f *= i;
+  i++;
+  }
+  return f;
+}
+```
+
+
+[The wheat/rice and chessboard problem](https://www.codewars.com/kata//5b0d67c1cb35dfa10b0022c7)
+```javascript
+function squaresNeeded (grains) {
+  let g = 1; square = 1 ; s = 0;
+  while (s < grains) {
+  s += g;
+  g *= 2;
+  ++square;
+  }
+  return square - 1;
+}
+```
