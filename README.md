@@ -618,3 +618,50 @@ function sumMul(n, m){
   return (sum > 0 && m > 0) ? sum : 'INVALID';
 }
 ```
+
+[Draw stairs](https://www.codewars.com/kata//5b4e779c578c6a898e0005c5)
+```javascript
+function drawStairs(n){
+  let s = '';
+  for (let i = 0; i < n; i++) {
+    s += ' '.repeat(i) + 'I';
+    if (i < n - 1) {
+      s += '\n';
+    }
+  }
+  return s;
+}
+```
+
+[Sum of the first nth term of Series](https://www.codewars.com/kata//555eded1ad94b00403000071)
+```javascript
+function SeriesSum(n){
+  let sum = 0;
+  for (i = 0; i < n; i++) {
+    sum += 1 / (1 + i * 3);
+  }
+  return sum.toFixed(2)
+}
+```
+
+[Beginner Series #3 Sum of Numbers](https://www.codewars.com/kata//55f2b110f61eb01779000053)
+```javascript
+function getSum(a, b){
+  let sum = 0;
+  for (i = Math.min(a, b); i <= Math.max(a, b); i++) {
+    sum += i;
+  }
+  return sum;
+}
+```
+
+[Power](https://www.codewars.com/kata//562926c855ca9fdc4800005b)
+```javascript
+function numberToPower(n, p){
+  let res = 1;
+  for (let i = 1; i <= p; i++) {
+    res = res * n;
+  } 
+  return res;
+}
+```
