@@ -665,3 +665,52 @@ function numberToPower(n, p){
   return res;
 }
 ```
+
+[isReallyNaN](https://www.codewars.com/kata//56c24c58e0c0f741d4001aef)
+```javascript
+const isReallyNaN = (val) => {
+  return (Number.isNaN(val)) ? true : false;
+}
+```
+
+[Filter the number](https://www.codewars.com/kata//55b051fac50a3292a9000025)
+```javascript
+FilterString = function(value){
+  let num = '';
+  for (let i = 0; i < value.length; i++) {
+    if (isNaN (value[i]) === false) 
+    num += value[i];
+  }
+  return +num; 
+}
+```
+
+[Is integer safe to use?](https://www.codewars.com/kata//55a4f9afeffe4231090000d6)
+```javascript
+function SafeInteger(n){
+  return Number.isSafeInteger(n) ? true : false;
+}
+```
+
+[Return Negative](https://www.codewars.com/kata//55685cd7ad70877c23000102)
+```javascript
+function makeNegative(num){
+  return num > 0 ? -num : num;
+}
+```
+
+[Invert values](https://www.codewars.com/kata//5899dc03bc95b1bf1b0000ad)
+```javascript
+function invert(array){
+  return array.map(item => item * - 1);
+}
+```
+
+[BASIC: Making Six Toast.](https://www.codewars.com/kata//5834fec22fb0ba7d080000e8)
+```javascript
+function sixToast(num){
+  let pc = 6;
+  return Math.abs(num - pc);
+}
+```
+
