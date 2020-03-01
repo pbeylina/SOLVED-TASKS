@@ -714,3 +714,57 @@ function sixToast(num){
 }
 ```
 
+[Closest elevator](https://www.codewars.com/kata//5c374b346a5d0f77af500a5a)
+```javascript
+function elevator(l, r, c) {
+  let difL = Math.abs(c - l);
+  let difR = Math.abs(c - r);
+  let difE = Math.abs(r - l); 
+  return (c === r & l === r & difL === difR) ? 'right': (c < r & r < l)? 'right': (c === l & c > difL)? 'left': (c > l & l > r)? 'left': (c < difL  & c > difE) ? 'left': (c < difR & c <difE) ? 'left':'right'; 
+}
+```
+
+[To square(root) or not to square(root)](https://www.codewars.com/kata//57f6ad55cca6e045d2000627)
+```javascript
+function squareOrSquareRoot(array) {
+  let res = [];  
+  for (let i = 0; i < array.length; ++i) {
+    if (Math.sqrt(array[i]) % 1 === 0) res.push (Math.sqrt(array[i]));
+    else res.push (Math.pow(array[i], 2))
+  }
+  return res;
+}
+```
+
+[Square Every Digit](https://www.codewars.com/kata//546e2562b03326a88e000020)
+```javascript
+function squareDigits(num) {
+  let res = num.toString().split('').map(Number);
+  let sd =[];
+  for (let i = 0; i < res.length; i++) {
+    sd.push (Math.pow(res[i], 2));
+  }
+  return +sd.join('')
+}
+```
+
+[Squares sequence](https://www.codewars.com/kata//5546180ca783b6d2d5000062)
+```javascript
+function squares(x, n) {
+  if (n <= 0) return [];
+  let s = [x];
+  let b = x;
+  while (s.length <= n - 1) {
+    x++;
+    s.push (b *= b);
+  }
+  return s
+}
+```
+
+[You're a square!](https://www.codewars.com/kata//54c27a33fb7da0db0100040e)
+```javascript
+var isSquare = function(n) {
+  return (Number.isInteger(Math.sqrt(n)))? true : false; 
+}
+```
