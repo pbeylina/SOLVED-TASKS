@@ -399,7 +399,7 @@ else return ages2;
 
 [Opposite number](https://www.codewars.com/kata//56dec885c54a926dcd001095)
 ```javascript
-function opposite(number) {
+function opposite (number) {
   return -number;
 }
 ```
@@ -767,4 +767,49 @@ function squares(x, n) {
 var isSquare = function(n) {
   return (Number.isInteger(Math.sqrt(n)))? true : false; 
 }
+```
+
+[Find the next perfect square!](https://www.codewars.com/kata//56269eb78ad2e4ced1000013)
+```javascript
+function findNextSquare(sq) {
+  return (Number.isInteger(Math.sqrt(sq))) ? Math.pow(1 + (Math.sqrt(sq)), 2) : -1;
+}
+```
+
+[Beginner Series #4 Cockroach](https://www.codewars.com/kata//55fab1ffda3e2e44f00000c6)
+```javascript
+function cockroachSpeed(s) {
+  return Math.floor(s * 100000 / 3600);
+}
+```
+
+[Price of Mangoes](https://www.codewars.com/kata//57a77726bb9944d000000b06)
+```javascript
+function mango(qty, price) {
+  return (qty - Math.floor(qty / 3)) * price;
+}
+```
+
+[Holiday VIII - Duty Free](https://www.codewars.com/kata//57e92e91b63b6cbac20001e5)
+```javascript
+function dutyFree(n, d, h) {
+  return Math.floor(h / ((n / 100) * d));
+}
+```
+
+[All Star Code Challenge #22](https://www.codewars.com/kata//5865cff66b5699883f0001aa)
+```javascript
+function toTime(sec) {
+  let h = Math.trunc(sec / 3600);
+  let m = Math.floor((sec / 3600 - h) * 60);
+  let str = `${h} hour(s) and ${m} minute(s)`;
+  return str;
+}
+```
+
+[Formatting decimal places #1](https://www.codewars.com/kata//5641c3f809bf31f008000042)
+```javascript
+function twoDecimalPlaces(number) {
+  return ((parseInt(number * 100)) / 100);
+ }
 ```
