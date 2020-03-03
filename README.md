@@ -813,3 +813,47 @@ function twoDecimalPlaces(number) {
   return ((parseInt(number * 100)) / 100);
  }
 ```
+
+[Tortoise racing](https://www.codewars.com/kata//55e2adece53b4cdcb900006c)
+```javascript
+function race(v1, v2, g) {
+  if (v1 >= v2) return null;
+  let t = g / (v2 - v1);
+  let tSec = t * 3600;
+  let h = Math.trunc(tSec / 3600);
+  let m = Math.trunc((tSec - h * 3600) / 60);
+  let s = Math.trunc(tSec- h * 3600 - m * 60);
+  return [h, m, s];
+}
+```
+
+[Lario and Muigi Pipe Problem](https://www.codewars.com/kata//56b29582461215098d00000f)
+```javascript
+function pipeFix(numbers) {
+  let arr = [];
+  for (let i = Math.min(...numbers); i <= Math.max(...numbers); i++) {
+  arr.push (i);
+  }
+  return arr;
+}
+```
+
+[Expressions Matter](https://www.codewars.com/kata//5ae62fcf252e66d44d00008e)
+```javascript
+function expressionMatter(a, b, c) {
+  return Math.max((a + b) * c, a * b + c, a + b + c, (a * b) * c, a * (b + c));
+}
+```
+[Convert to Binary](https://www.codewars.com/kata//59fca81a5712f9fa4700159a)
+```javascript
+function toBinary(n) {
+  return +n.toString(2);
+}
+```
+
+[Binary Addition](https://www.codewars.com/kata//551f37452ff852b7bd000139)
+```javascript
+function addBinary(a, b) {
+  return (a + b).toString(2);
+}
+```
