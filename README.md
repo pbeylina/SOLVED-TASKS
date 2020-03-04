@@ -844,6 +844,7 @@ function expressionMatter(a, b, c) {
   return Math.max((a + b) * c, a * b + c, a + b + c, (a * b) * c, a * (b + c));
 }
 ```
+
 [Convert to Binary](https://www.codewars.com/kata//59fca81a5712f9fa4700159a)
 ```javascript
 function toBinary(n) {
@@ -856,4 +857,33 @@ function toBinary(n) {
 function addBinary(a, b) {
   return (a + b).toString(2);
 }
+```
+
+[Calculate Price Excluding VAT](https://www.codewars.com/kata/5890d8bc9f0f422cf200006b)
+```javascript
+const excludingVatPrice = price => price === null ? -1 : +(price / 1.15).toFixed(2);
+```
+
+[Parse nice int from char problem](https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1)
+```javascript
+function getAge(inputString) {
+  return  parseInt(inputString);
+}
+```
+
+[Hex to Decimal](https://www.codewars.com/kata/57a4d500e298a7952100035d)
+```javascript
+function hexToDec(hexString) {
+  return  parseInt(hexString, 16);
+}
+```
+
+[Bin to Decimal](https://www.codewars.com/kata/57a5c31ce298a7e6b7000334)
+```javascript
+const binToDec = bin => Number.parseInt(bin.toString(2), 2);
+```
+
+[Parse float](https://www.codewars.com/kata/57a386117cb1f31890000039)
+```javascript
+const parseF = s => Number.isNaN(Number.parseFloat(s)) ? null : parseFloat(s);
 ```
