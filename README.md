@@ -887,3 +887,45 @@ const binToDec = bin => Number.parseInt(bin.toString(2), 2);
 ```javascript
 const parseF = s => Number.isNaN(Number.parseFloat(s)) ? null : parseFloat(s);
 ```
+
+[Sum Arrays](https://www.codewars.com/kata//53dc54212259ed3d4f00071c)
+```javascript
+function sum(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+    return sum ;  
+}
+```
+
+[Count the Monkeys!](https://www.codewars.com/kata//56f69d9f9400f508fb000ba7)
+```javascript
+function monkeyCount(n) {
+  let quantity = [];
+  for (let i = 1; i <= n; i++) {
+    quantity.push (i);
+  }
+  return quantity;
+}
+```
+
+[Filling an array (part 1)](https://www.codewars.com/kata//571d42206414b103dc0006a1)
+```javascript
+function arr(N) {
+  let res = [];
+  for (let i = 0; i <= N - 1; i++) {
+    res.push (i);
+  }
+    return res;
+}
+```
+
+[What is type of variable?](https://www.codewars.com/kata//57293671c98f77e84b000065)
+```javascript
+function type(value) {
+  return ({}.toString.call(value) === '[object Date]') ? 'date' : 
+  (Array.isArray(value) === true) ? 'array' : 
+  ({}.toString.call(value) === '[object Null]') ? 'null' : typeof(value);
+}
+```
