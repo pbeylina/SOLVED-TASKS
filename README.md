@@ -929,3 +929,22 @@ function type(value) {
   ({}.toString.call(value) === '[object Null]') ? 'null' : typeof(value);
 }
 ```
+
+[Is every value in the array an array?](https://www.codewars.com/kata//582c81d982a0a65424000201)
+```javascript
+const arrCheck = value => value.every(Array.isArray);
+```
+
+[Enumerable Magic #3 - Does My List Include This?](https://www.codewars.com/kata//545991b4cbae2a5fda000158)
+```javascript
+function include(arr, item) {
+  return arr.includes(item, item.every < arr.length);
+}
+```
+
+[Difference of Volumes of Cuboids](https://www.codewars.com/kata//58cb43f4256836ed95000f97)
+```javascript
+function findDifference(a, b) {
+  return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+}
+```
