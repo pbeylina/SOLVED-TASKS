@@ -948,3 +948,28 @@ function findDifference(a, b) {
   return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
 }
 ```
+
+[Counting sheep...](https://www.codewars.com/kata//54edbc7200b811e956000556)
+```javascript
+function countSheeps(arrayOfSheep) {
+  let sum = arrayOfSheep.filter( i => i === true);
+  return sum.length;
+}
+```
+
+[A Needle in the Haystack](https://www.codewars.com/kata//56676e8fabd2d1ff3000000c)
+```javascript
+function findNeedle(haystack) {
+  let str = 'found the needle at position ';
+  return str + `${haystack.indexOf ('needle', 0)}`;
+}
+```
+
+[Total amount of points](https://www.codewars.com/kata//5bb904724c47249b10000131)
+```javascript
+function points(games) {
+  let sum = 0;
+  games.forEach((el) => (el[0] > el[2]) ? sum += 3 : (el[0] === el[2]) ? sum += 1 : 0);
+  return sum;
+}
+```
