@@ -973,3 +973,42 @@ function points(games) {
   return sum;
 }
 ```
+
+[Calculate average](https://www.codewars.com/kata//57a2013acf1fa5bfc4000921)
+```javascript
+function find_average(array) {
+  return array.reduce((a, b) => (a + b)) / array.length;
+}
+```
+
+[Square(n) Sum](https://www.codewars.com/kata//515e271a311df0350d00000f)
+```javascript
+function squareSum(num) {
+  return num.reduce((a, num) => a + Math.pow(num, 2), 0);
+}
+```
+
+[Find the first non-consecutive number](https://www.codewars.com/kata//58f8a3a27a5c28d92e000144)
+```javascript
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] !== arr[i] + 1)
+    return arr[i + 1];
+  }
+    return null;
+}
+```
+
+[How good are you really?](https://www.codewars.com/kata//5601409514fc93442500010b)
+```javascript
+function betterThanAverage(classPoints, yourPoints) {
+  return classPoints.reduce((a, b) => a + b) / classPoints.length < yourPoints;
+}
+```
+
+[Sum of positive](https://www.codewars.com/kata//5715eaedb436cf5606000381)
+```javascript
+function positiveSum(arr) {
+  return arr.reduce((sum, arr) => arr > 0 ? sum + arr : sum, 0);
+}
+```
