@@ -1012,3 +1012,17 @@ function positiveSum(arr) {
   return arr.reduce((sum, arr) => arr > 0 ? sum + arr : sum, 0);
 }
 ```
+
+[Odd or Even?](https://www.codewars.com/kata//5949481f86420f59480000e7)
+```javascript
+function oddOrEven(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (sum.length == 0) {
+    return 'even';
+    }
+    else  sum += arr[i];
+  }
+  return sum % 2 === 0 ? 'even' : 'odd';
+}
+```
