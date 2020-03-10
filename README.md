@@ -1026,3 +1026,37 @@ function oddOrEven(arr) {
   return sum % 2 === 0 ? 'even' : 'odd';
 }
 ```
+
+[Count of positives / sum of negatives](https://www.codewars.com/kata//576bb71bbbcf0951d5000044)
+```javascript
+function countPositivesSumNegatives(input) {
+  if (!input || input.length == 0) return [];
+  let count = 0;
+  let sum = 0;
+  input.forEach (el => {
+    if (el > 0) {
+    count++;
+    } else {
+    sum += el;
+    }
+  });
+  return [count, sum];
+}
+```
+
+[Divide and Conquer](https://www.codewars.com/kata//57eaec5608fed543d6000021)
+```javascript
+function divCon(x) {
+  let sumNum = 0;
+  let sumStr = 0;
+  for (let i = 0; i <= x.length; i++) {
+    if (typeof x[i] === 'number') {
+    sumNum += x[i];
+    }
+    else if (typeof x[i] === 'string') {
+    sumStr += +x[i];
+    }
+  }
+  return sumNum - sumStr;
+}
+```
