@@ -1076,6 +1076,7 @@ let count = 0;
   return count;
 }
 ```
+
 [Find the smallest integer in the array](https://www.codewars.com/kata//55a2d7ebe362935a210000b2)
 ```javascript
 class SmallestIntegerFinder {
@@ -1084,6 +1085,7 @@ class SmallestIntegerFinder {
   }
 }
 ```
+
 [Sum without highest and lowest number](https://www.codewars.com/kata//576b93db1129fcf2200001e6)
 ```javascript
 function sumArray(arr) {
@@ -1097,5 +1099,75 @@ function sumArray(arr) {
       sum += arr[i];
   }
   return sum - min - max;
+}
+```
+
+[Remove the minimum](https://www.codewars.com/kata//563cf89eb4747c5fb100001b)
+```javascript
+function removeSmallest(num) {
+  if (!num) return [];
+  let res = [...num];
+  let min = Math.min.apply(null, res);
+  res.splice(res.indexOf(min), 1);
+  return res;
+}
+```
+
+[Find Maximum and Minimum Values of a List](https://www.codewars.com/kata//577a98a6ae28071780000989)
+```javascript
+let min = function(list) {
+  let min = list[0];
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] < min) min = list[i];
+  }
+  return min;
+}
+
+let max = function(list) {
+  let max = list[0]; 
+  for (let i = 0; i < list.length; i++) { 
+    if (max < list[i]) max = list[i]; 
+  }
+  return max;
+}
+```
+
+[Find Maximum and Minimum Values of a List](https://www.codewars.com/kata//577a98a6ae28071780000989)
+```javascript
+const min = list => Math.min(...list);
+const max = list => Math.max(...list);
+```
+
+[Count by X](https://www.codewars.com/kata//5513795bd3fafb56c200049e)
+```javascript
+function countBy(x, n) {
+  let z = [];
+  for (let i =1; i <= n; i ++) {
+  z.push(x * i)
+  }
+  return z;
+}
+```
+
+[Unfinished Loop - Bug Fixing #1](https://www.codewars.com/kata//55c28f7304e3eaebef0000da)
+```javascript
+function createArray(number) {
+  var newArray = [];
+  for(var counter = 1; counter <= number; counter++) {
+    newArray.push(counter);
+  }
+  return newArray;
+}
+```
+
+[Generate range of integers](https://www.codewars.com/kata//55eca815d0d20962e1000106)
+```javascript
+function generateRange(min, max, step) {
+  let range = [];
+  let count = 0;
+  for (let i = min; count <= max - step; i = step) {
+    range.push(count += i);
+  }
+  return range;
 }
 ```
