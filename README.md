@@ -1060,3 +1060,42 @@ function divCon(x) {
   return sumNum - sumStr;
 }
 ```
+
+[Sum of Odd Cubed Numbers](https://www.codewars.com/kata//580dda86c40fa6c45f00028a)
+```javascript
+function cubeOdd(arr) {
+let count = 0; 
+  for (let i = 0; i < arr.length; i++) {
+    if (isNaN(arr[i])) {
+    return undefined;
+    }
+    else if (arr[i] % 2 !== 0) {
+    count += Math.pow((arr[i]), 3);
+    }
+  }
+  return count;
+}
+```
+[Find the smallest integer in the array](https://www.codewars.com/kata//55a2d7ebe362935a210000b2)
+```javascript
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+  return Math.min(...args)
+  }
+}
+```
+[Sum without highest and lowest number](https://www.codewars.com/kata//576b93db1129fcf2200001e6)
+```javascript
+function sumArray(arr) {
+  if (!arr || arr.length < 2) return 0;
+  let min = arr [0];
+  let max = arr [0];
+  let sum = arr [0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) min = arr[i];
+    if (arr[i] > max) max = arr[i];
+      sum += arr[i];
+  }
+  return sum - min - max;
+}
+```
