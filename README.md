@@ -1171,3 +1171,38 @@ function generateRange(min, max, step) {
   return range;
 }
 ```
+
+[Training JS #10: loop statement --for](https://www.codewars.com/kata//5721a78c283129e416000999)
+```javascript
+function pickIt(arr) {
+  let odd = []; 
+  let even = [];
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2) odd.push(arr[i]);
+    else even.push(arr[i]);
+  }
+  return [odd, even];
+}
+```
+
+[Powers of 2](https://www.codewars.com/kata//57a083a57cb1f31db7000028)
+```javascript
+function powersOfTwo(n) {
+  let res = [];
+  for(let i = 0; i <= n; i++) {
+    res.push(Math.pow(2, i))
+  }
+  return res;
+}
+```
+
+[Reversed sequence](https://www.codewars.com/kata//5a00e05cc374cb34d100000d)
+```javascript
+function reverseSeq(n) {
+  let res = [];
+  for (let i = n; i > 0; i--) {
+    res.push(i);
+  }
+  return res;
+}
+```
