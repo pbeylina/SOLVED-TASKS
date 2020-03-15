@@ -1264,3 +1264,17 @@ return a.includes(x) ? true : false;
 ```javascript
 const check = (a, x) => a.includes(x) ? true : false;
 ```
+[Be Concise IV - Index of an element in an array](https://www.codewars.com/kata//5703c093022cd1aae90012c9)
+```javascript
+let find = (arr, el) => arr.indexOf(el) === 0 ? 0 : arr.indexOf(el) > 0 ? arr.indexOf(el) : "Not found";
+```
+
+[A wolf in sheep's clothing](https://www.codewars.com/kata//5c8bfa44b9d1192e1ebd3d15)
+```javascript
+function warnTheSheep(queue) {
+let l = queue.length;
+let wolf = queue.indexOf('wolf');
+return (l === wolf + 1) ? "Pls go away and stop eating my sheep":
+`Oi! Sheep number ${l - 1 - wolf}! You are about to be eaten by a wolf!`
+}
+```
