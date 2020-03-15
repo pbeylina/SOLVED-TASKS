@@ -1206,3 +1206,61 @@ function reverseSeq(n) {
   return res;
 }
 ```
+
+[Find the divisors!](https://www.codewars.com/kata//544aed4c4a30184e960010f4)
+```javascript
+function divisors(integer) {
+  let res = [];
+  for (let i = 2; i < integer; i++) 
+    if (integer % i === 0) res.push(i); 
+  return (res.length === 0) ? integer + ' is prime' : res;
+}
+```
+
+[Pre-FizzBuzz Workout #1](https://www.codewars.com/kata//569e09850a8e371ab200000b)
+```javascript
+function preFizz(n) {
+  let res = [];
+  for (let i = 1; i <= n; i++ ) {
+    res.push(i);
+  }
+  return res;
+}
+```
+
+[Training JS #4: Basic data types--Array](https://www.codewars.com/kata//571effabb625ed9b0600107a)
+```javascript
+function getLength(arr) {
+  return  arr.length;
+}
+
+function getFirst(arr) {
+  return arr[0];
+}
+
+function getLast(arr) {
+  return arr[arr.length-1]
+}
+
+function pushElement(arr) {
+  let el = 1;
+  arr.push(el);
+  return arr;
+}
+
+function popElement(arr) {
+  arr.pop();
+  return arr;
+}
+```
+
+[No Loops 2 - You only need one](https://www.codewars.com/kata//57cc40b2f8392dbf2a0003ce)
+```javascript
+function check(a, x) {
+return a.includes(x) ? true : false;
+}
+```
+[You only need one - Beginner](https://www.codewars.com/kata//57cc975ed542d3148f00015b)
+```javascript
+const check = (a, x) => a.includes(x) ? true : false;
+```
