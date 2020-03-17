@@ -1272,9 +1272,31 @@ let find = (arr, el) => arr.indexOf(el) === 0 ? 0 : arr.indexOf(el) > 0 ? arr.in
 [A wolf in sheep's clothing](https://www.codewars.com/kata//5c8bfa44b9d1192e1ebd3d15)
 ```javascript
 function warnTheSheep(queue) {
-let l = queue.length;
-let wolf = queue.indexOf('wolf');
-return (l === wolf + 1) ? "Pls go away and stop eating my sheep":
-`Oi! Sheep number ${l - 1 - wolf}! You are about to be eaten by a wolf!`
+  let l = queue.length;
+  let wolf = queue.indexOf('wolf');
+  return (l === wolf + 1) ? "Pls go away and stop eating my sheep":
+ `Oi! Sheep number ${l - 1 - wolf}! You are about to be eaten by a wolf!`
+}
+```
+
+[Find numbers which are divisible by given number](https://www.codewars.com/kata//55edaba99da3a9c84000003b)
+```javascript
+function divisibleBy (numbers, divisor){
+  return numbers.filter((el) => el % divisor === 0);
+}
+```
+
+[Removing Elements](https://www.codewars.com/kata//5769b3802ae6f8e4890009d2)
+```javascript
+function removeEveryOther(arr) {
+  return arr.filter((el, i) => i % 2 !==1); 
+}
+```
+
+[Well of Ideas - Easy Version](https://www.codewars.com/kata//57f222ce69e09c3630000212)
+```javascript
+function well(x) {
+  let res = x.filter(el => el === 'good');
+  return res.length < 1 ? 'Fail!' : res.length <= 2 ? 'Publish!' : 'I smell a series!';
 }
 ```
