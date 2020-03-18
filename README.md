@@ -1300,3 +1300,23 @@ function well(x) {
   return res.length < 1 ? 'Fail!' : res.length <= 2 ? 'Publish!' : 'I smell a series!';
 }
 ```
+
+[JavaScript Array Filter](https://www.codewars.com/kata//514a6336889283a3d2000001)
+```javascript
+function getEvenNumbers(numbersArray) {
+  return numbersArray.filter(el => el % 2 === 0);
+}
+```
+
+[filterEvenLengthWords](https://www.codewars.com/kata//59564f3bcc15b5591a00004a)
+```javascript
+function filterEvenLengthWords(words) {
+  return words.filter(el => el.length % 2 === 0);
+}
+```
+
+[Find how many times did a team from a given country win the Champions League?](https://www.codewars.com/kata//581b30af1ef8ee6aea0015b9)
+```javascript
+const countWins = (winnerList, country) => winnerList.filter(el => el.country === country).length; 
+```
+
