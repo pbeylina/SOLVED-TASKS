@@ -1320,3 +1320,24 @@ function filterEvenLengthWords(words) {
 const countWins = (winnerList, country) => winnerList.filter(el => el.country === country).length; 
 ```
 
+[Array.diff](https://www.codewars.com/kata//523f5d21c841566fde000009)
+```javascript
+const array_diff = (a, b) => a.filter(el => !b.includes(el));
+```
+
+[Find Duplicates](https://www.codewars.com/kata//5558cc216a7a231ac9000022)
+```javascript
+function duplicates(arr) {
+  return arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
+}
+```
+
+[Train to remove duplicates from an array with filter()](https://www.codewars.com/kata//58308360aeb69a460b0002b2)
+```javascript
+function unique(arr) {
+  return arr.filter((el, i) => i === arr.indexOf(el));
+}
+```
+
+
+
