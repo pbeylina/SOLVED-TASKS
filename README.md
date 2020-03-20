@@ -1339,5 +1339,23 @@ function unique(arr) {
 }
 ```
 
+[Santa's Naughty List](https://www.codewars.com/kata//5a0b4dc2ffe75f72f70000ef)
+```javascript
+function findChildren(santasList, children) {
+  return [...new Set(children.filter(name => santasList.includes(name)).sort())];
+}
+```
 
+[Convert number to reversed array of digits](https://www.codewars.com/kata//5583090cbe83f4fd8c000051)
+```javascript
+const fixTheMeerkat = arr => arr.reverse();
+```
+
+[My head is at the wrong end!](https://www.codewars.com/kata//56f699cd9400f5b7d8000b55)
+```javascript
+function sumOfDifferences(arr) {
+  return arr.sort((a, b) => b - a)
+  .reduce((a, el, i, arr) => i + 1 < arr.length ? a + el - arr[i + 1] : a, 0)
+}
+```
 
