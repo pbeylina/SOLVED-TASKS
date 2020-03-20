@@ -1359,3 +1359,28 @@ function sumOfDifferences(arr) {
 }
 ```
 
+[Sum of differences in array](https://www.codewars.com/kata//5b73fe9fb3d9776fbf00009e)
+```javascript
+function sumOfDifferences(arr) {
+  return arr.sort((a, b) => b - a)
+  .reduce((a, el, i, arr) => i + 1 < arr.length ? a + el - arr[i + 1] : a, 0)
+}
+```
+
+[Sum of two lowest positive integers](https://www.codewars.com/kata//558fc85d8fd1938afb000014)
+```javascript
+function sumTwoSmallestNumbers(num) {  
+  num.sort((a, b) => a - b);
+  return num[0] + num[1];
+}
+```
+
+[Two Oldest Ages](https://www.codewars.com/kata//511f11d355fe575d2c000001)
+```javascript
+const twoOldestAges = ages => ages.sort((a, b) => a - b).slice(-2);
+```
+
+[Sentence Smash](https://www.codewars.com/kata//53dc23c68a0c93699800041d)
+```javascript
+const smash = words => words.join(' ');
+```
