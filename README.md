@@ -1384,9 +1384,29 @@ const twoOldestAges = ages => ages.sort((a, b) => a - b).slice(-2);
 ```javascript
 const smash = words => words.join(' ');
 ```
+
 [String Templates - Bug Fixing #5](https://www.codewars.com/kata//55c90cad4b0fe31a7200001f)
 ```javascript
 function buildString(...template) {
   return `I like ${template.join(', ')}!`;
+}
+```
+
+[Printing Array elements with Comma delimiters](https://www.codewars.com/kata//56e2f59fb2ed128081001328)
+```javascript
+const printArray = array => array.join();
+```
+
+[CSV representation of array](https://www.codewars.com/kata//5a34af40e1ce0eb1f5000036)
+```javascript
+function toCsvText(array) {
+  return array.join('\n'); 
+}
+```
+
+[Enumerable Magic #1 - True for All?](https://www.codewars.com/kata//54598d1fcbae2ae05200112c)
+```javascript
+function all (arr, fun) {
+  return arr.every(fun);
 }
 ```
