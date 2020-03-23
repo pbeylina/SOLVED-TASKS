@@ -1384,3 +1384,9 @@ const twoOldestAges = ages => ages.sort((a, b) => a - b).slice(-2);
 ```javascript
 const smash = words => words.join(' ');
 ```
+[String Templates - Bug Fixing #5](https://www.codewars.com/kata//55c90cad4b0fe31a7200001f)
+```javascript
+function buildString(...template) {
+  return `I like ${template.join(', ')}!`;
+}
+```
