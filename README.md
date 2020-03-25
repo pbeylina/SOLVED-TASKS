@@ -1410,3 +1410,30 @@ function all (arr, fun) {
   return arr.every(fun);
 }
 ```
+
+[Grasshopper - Array Mean](https://www.codewars.com/kata//55d277882e139d0b6000005d)
+```javascript
+const findAverage = nums => nums.reduce((a, el) => a + el) / nums.length;
+```
+
+[Array plus array](https://www.codewars.com/kata//5a2be17aee1aaefe2a000151)
+```javascript
+const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((a, el) => a + el);
+```
+
+[Beginner - Reduce but Grow](https://www.codewars.com/kata//57f780909f7e8e3183000078)
+```javascript
+const grow = x => x.reduce((a, el) => a * el, 1);
+```
+
+[SpeedCode #2 - Array Madness](https://www.codewars.com/kata//56ff6a70e1a63ccdfa0001b1)
+```javascript
+function arrayMadness (a, b) {
+  return a.reduce((a, el) => a + Math.pow(el, 2), 0) > b.reduce((a, el) => a + Math.pow(el, 3), 0);
+}
+```
+
+[Beginner - Lost Without a Map](https://www.codewars.com/kata//57f781872e3d8ca2a000007e)
+```javascript
+const maps = x => x.map(el => el * 2);
+```
