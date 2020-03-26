@@ -1437,3 +1437,23 @@ function arrayMadness (a, b) {
 ```javascript
 const maps = x => x.map(el => el * 2);
 ```
+
+[Enumerable Magic #25 - Take the First N Elements](https://www.codewars.com/kata//545afd0761aa4c3055001386)
+```javascript
+const take = (arr, n) => arr.splice(0, n);
+```
+
+[Remove First and Last Character Part Two](https://www.codewars.com/kata//570597e258b58f6edc00230d)
+```javascript
+function array(arr) {
+  return arr.split(',').slice(1, -1).join(' ') || null;
+}
+```
+
+[Jenny's secret message](https://www.codewars.com/kata//55225023e1be1ec8bc000390)
+```javascript
+function greet(name) {
+  if(name === "Johnny") return "Hello, my love!";
+  return `Hello, ${name}!`;
+}
+```
