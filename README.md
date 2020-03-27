@@ -1457,3 +1457,16 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 ```
+
+[Template Strings](https://www.codewars.com/kata//55a14f75ceda999ced000048)
+```javascript
+let TempleStrings = (obj, feature) => `${obj} are ${feature}`;
+```
+
+[Returning Strings](https://www.codewars.com/kata//55a70521798b14d4750000a4)
+```javascript
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
+```
+
