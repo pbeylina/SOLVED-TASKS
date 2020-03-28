@@ -1470,3 +1470,14 @@ function greet(name) {
 }
 ```
 
+[Grasshopper - Combine strings](https://www.codewars.com/kata//55f73f66d160f1f1db000059)
+```javascript
+let combineNames = (first, last) => `${first} ${last}`;
+```
+
+[Grasshopper - Debug sayHello](https://www.codewars.com/kata//5625618b1fe21ab49f00001f)
+```javascript
+function sayHello(name) {
+  return `Hello, ${name}`;
+}
+```
