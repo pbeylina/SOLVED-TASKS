@@ -1481,3 +1481,20 @@ function sayHello(name) {
   return `Hello, ${name}`;
 }
 ```
+
+[If you can't sleep, just count sheep!!](https://www.codewars.com/kata//5b077ebdaf15be5c7f000077)
+```javascript
+var countSheep = function (num) {
+  let str = ' sheep...';
+  let res = '';
+  for (let i = 1; i <= num; i++) {
+    res += i + str;
+  }
+  return res;
+}
+```
+
+[get character from ASCII Value](https://www.codewars.com/kata//55ad04714f0b468e8200001c)
+```javascript
+const getChar = c => String.fromCharCode(c);
+```
