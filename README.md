@@ -1498,3 +1498,15 @@ var countSheep = function (num) {
 ```javascript
 const getChar = c => String.fromCharCode(c);
 ```
+
+[Is this my tail?](https://www.codewars.com/kata//56f695399400f5d9ef000af5)
+```javascript
+function correctTail(body, tail) {
+  sub = body[body.length-1];
+  if (sub === tail) {
+    return true;
+  }
+  else 
+    return false;
+  }
+```
