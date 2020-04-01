@@ -1510,3 +1510,19 @@ function correctTail(body, tail) {
     return false;
   }
 ```
+
+[Abbreviate a Two Word Name](https://www.codewars.com/kata//57eadb7ecd143f4c9c0000a3)
+```javascript
+function abbrevName (name) { 
+  let space = name.indexOf(' ', 0)
+  return (name[0] + '.' + name[space + 1]).toUpperCase();
+}
+```
+
+[5 without numbers !!](https://www.codewars.com/kata//59441520102eaa25260000bf)
+```javascript
+function unusualFive(x) {
+  x = 'world';
+  return x.length;  
+}
+```
