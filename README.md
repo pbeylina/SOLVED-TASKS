@@ -1532,3 +1532,15 @@ function unusualFive(x) {
 const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin) ? true : false;
 ```
 
+[Numbers to Letters](https://www.codewars.com/kata//57ebaa8f7b45ef590c00000c)
+```javascript
+function switcher (x) {
+  let res = '';
+  let str = "0zyxwvutsrqponmlkjihgfedcba!? ";
+  for (let i = 0; i < x.length; i++) {
+    res += str[x[i]];
+  }
+  return res;
+}
+```
+
