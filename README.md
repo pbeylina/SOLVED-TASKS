@@ -1555,3 +1555,14 @@ function removeChar(str) {
 ```javascript
 const lowercaseCount = str => str.replace(/[^a-z]/g, '').length;
 ```
+
+[Double Char](https://www.codewars.com/kata//56b1f01c247c01db92000076)
+```javascript
+function doubleChar(str) {
+  let myStr = '';
+  for (let i = 0; i < str.length; i++) {
+    myStr += str[i] + str[i];
+  }
+  return myStr;
+}
+```
