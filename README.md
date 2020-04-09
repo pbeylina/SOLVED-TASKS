@@ -1566,3 +1566,22 @@ function doubleChar(str) {
   return myStr;
 }
 ```
+
+[Remove String Spaces](https://www.codewars.com/kata//57eae20f5500ad98e50002c5)
+```javascript
+const noSpace = x => x.replace(/\s+/g, '');
+```
+
+[Remove String Spaces](https://www.codewars.com/kata//57eae20f5500ad98e50002c5)
+```javascript
+function noSpace(x) {
+  let myStr = '';
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] !== ' ') 
+    myStr += x[i];
+  }
+  return myStr;
+}
+```
+
+
