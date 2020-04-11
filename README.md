@@ -1584,4 +1584,15 @@ function noSpace(x) {
 }
 ```
 
+[Spacify](https://www.codewars.com/kata//57f8ee485cae443c4d000127)
+```javascript
+function spacify(str) {
+  let myStr = '';
+  for (let i = 0; i < str.length; i++) {
+    myStr += str[i] + ' ';
+  }
+  return myStr.trim();
+}
+```
+
 
