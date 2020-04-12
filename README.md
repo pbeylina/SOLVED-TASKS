@@ -1595,4 +1595,28 @@ function spacify(str) {
 }
 ```
 
+[Unique In Order](https://www.codewars.com/kata//54e6533c92449cc251001667)
+```javascript
+function tripleTrouble(one, two, three) {
+  let myStr = '';
+  for (let i = 0; i < one.length; i++) {   
+    myStr = myStr + one[i] + two[i] + three[i];
+  }
+  return myStr;
+}
+```
+
+[Unique In Order](https://www.codewars.com/kata//54e6533c92449cc251001667)
+```javascript
+var uniqueInOrder = function(str) {
+  let arr = [];
+  if (!str) return []; else arr.push(str[0]);
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] !== str[i - 1]) arr.push(str[i]);
+  }
+  return arr;
+}
+```
+
+
 
