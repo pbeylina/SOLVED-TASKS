@@ -1618,5 +1618,32 @@ var uniqueInOrder = function(str) {
 }
 ```
 
+[Reversed Strings](https://www.codewars.com/kata//5168bb5dfe9a00b126000018)
+```javascript
+function solution(str) {
+  let myStr = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    myStr += str[i];
+  }
+  return myStr;
+}
+```
+
+[Is it a palindrome?](https://www.codewars.com/kata//57a1fd2ce298a731b20006a4)
+```javascript
+function isPalindrome(x) {
+  let str = x.toLowerCase();
+  return str === str.split('').reverse().join(''); 
+}
+```
+
+[The Wide-Mouthed frog!](https://www.codewars.com/kata//57ec8bd8f670e9a47a000f89)
+```javascript
+function mouthSize(animal) {
+  return animal.toLowerCase() === 'alligator' ? "small" : "wide";
+}
+```
+
+
 
 
