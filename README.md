@@ -1644,6 +1644,19 @@ function mouthSize(animal) {
 }
 ```
 
+[MakeUpperCase](https://www.codewars.com/kata//57a0556c7cb1f31ab3000ad7)
+```javascript
+const makeUpperCase = str => str.toUpperCase();
+```
+
+[Capitalization and Mutability](https://www.codewars.com/kata//595970246c9b8fa0a8000086)
+```javascript
+function capitalizeWord(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
+```
+
+
 
 
 
