@@ -1668,6 +1668,13 @@ function capitals(word) {
   }
 ```
 
+[Mumbling](https://www.codewars.com/kata//5667e8f4e3f572a8f2000039)
+```javascript
+function accum(s) {
+  return s.split('').map((x, index) => x.toUpperCase() + Array(index + 1).join(x.toLowerCase())).join('-');
+}
+```
+
 
 
 
