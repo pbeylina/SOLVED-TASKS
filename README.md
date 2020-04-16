@@ -1675,6 +1675,25 @@ function accum(s) {
 }
 ```
 
+[Thinking & Testing : Something capitalized](https://www.codewars.com/kata//56d93f249c844788bc000002)
+```javascript
+function testit(s) {  
+  if (s === '') return s;
+  let str = s.split(' ');
+  return str.map(el => el.slice(0, el.length - 1) + el[el.length - 1].toUpperCase()).join(' ');    
+}
+```
+
+[Miles per gallon to kilometers per liter](https://www.codewars.com/kata//557b5e0bddf29d861400005d)
+```javascript
+function converter (mpg) {
+  let gal = 4.54609188;
+  let mi = 1.609344;
+  return +((mpg * mi) / gal).toFixed(2);
+}
+```
+
+
 
 
 
