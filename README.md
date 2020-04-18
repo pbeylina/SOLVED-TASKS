@@ -1720,6 +1720,17 @@ function fiveLine(s) {
 }
 ```
 
+[repeatIt](https://www.codewars.com/kata//557af9418895e44de7000053)
+```javascript
+const repeatIt = (str, n) => typeof str === 'string' ? str.repeat(n) : 'Not a string';
+```
+
+[String repeat](https://www.codewars.com/kata//57a0e5c372292dd76d000d7e)
+```javascript
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+```
 
 
 
