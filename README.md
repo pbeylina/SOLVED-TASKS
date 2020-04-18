@@ -1693,6 +1693,33 @@ function converter (mpg) {
 }
 ```
 
+[Find the Slope](https://www.codewars.com/kata//55a75e2d0803fea18f00009d)
+```javascript
+function slope(points) {
+  let a = points[0];
+  let b = points[1];
+  let c = points[2];
+  let d = points[3];
+  if (a === c) {
+  return 'undefined';
+  }
+  return ((d - b) / (c - a)).toString();
+}
+```
+
+[Training JS #21: Methods of String object--trim() and the string template](https://www.codewars.com/kata//5729b103dd8bac11a900119e)
+```javascript
+function fiveLine(s) {
+  let str = s.trim();
+  let res = '';
+  for (let i = 1; i <= 5; i++) {
+    if (i === 5) res += `${str.repeat(i)}`;
+      else res += `${str.repeat(i)}\n`;
+  }
+  return res;
+}
+```
+
 
 
 
