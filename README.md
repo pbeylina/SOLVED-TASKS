@@ -1732,6 +1732,22 @@ function repeatStr (n, s) {
 }
 ```
 
+[Name on billboard](https://www.codewars.com/kata//570e8ec4127ad143660001fd)
+```javascript
+function billboard(name, price = 30) {
+  let res = 0;
+  for (let i = 0; i < name.length; i++) {
+    res += price;
+  }
+  return res;
+}
+```
+
+[Do you speak "English"?](https://www.codewars.com/kata//58dbdccee5ee8fa2f9000058)
+```javascript
+const spEng = sentence => sentence.toLowerCase().includes('english') ? true : false;
+```
+
 
 
 
