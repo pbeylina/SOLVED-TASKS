@@ -1767,6 +1767,21 @@ else return false;
 }
 ```
 
+[Don't give me five!](https://www.codewars.com/kata//5813d19765d81c592200001a)
+```javascript
+function dontGiveMeFive(start, end) {
+  let count = 0;
+  let str;
+  for (let i = start; i <= end; i++){
+    str = i + '';
+    if (!(str.includes('5'))) count++;
+   }
+   return count;
+}
+```
+
+
+
 
 
 
