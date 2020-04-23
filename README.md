@@ -1799,6 +1799,21 @@ str.indexOf(c) === str.lastIndexOf(c) ? 0 : str.lastIndexOf(c) - str.indexOf(c);
 const validateCode = code => /^[1-3]/.test(code) ? true : false;
 ```
 
+[String ends with?](https://www.codewars.com/kata//51f2d1cafc9c0f745c00037d)
+```javascript
+const solution = (str, ending) => str.endsWith(ending);
+```
+
+[Remove the time](https://www.codewars.com/kata//56b0ff16d4aa33e5bb00008e)
+```javascript
+const shortenToDate = longDate => longDate.slice(0, longDate.indexOf(','));
+```
+
+[Credit Card Mask](https://www.codewars.com/kata//5412509bd436bd33920011bc)
+```javascript
+const maskify = cc => cc.length <= 4 ? cc : `${'#'.repeat(cc.length - 4)}${cc.substr(cc.length - 4)}`;
+```
+
 
 
 
