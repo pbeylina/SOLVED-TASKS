@@ -1780,6 +1780,24 @@ function dontGiveMeFive(start, end) {
 }
 ```
 
+[Find the position!](https://www.codewars.com/kata//5808e2006b65bff35500008f)
+```javascript
+function position(letter) {
+  let str = 'abcdefghijklmnopqrstuvwxyz';
+  return `Position of alphabet: ${str.padStart(27).indexOf(letter)}`;
+}
+```
+
+[Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search()](https://www.codewars.com/kata//57277a31e5e51450a4000010)
+```javascript
+const firstToLast = (str, c) => str.search(c) === -1 ? -1: 
+str.indexOf(c) === str.lastIndexOf(c) ? 0 : str.lastIndexOf(c) - str.indexOf(c);
+```
+
+[validate code with simple regex](https://www.codewars.com/kata//56a25ba95df27b7743000016)
+```javascript
+const validateCode = code => /^[1-3]/.test(code) ? true : false;
+```
 
 
 
