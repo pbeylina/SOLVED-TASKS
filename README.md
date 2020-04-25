@@ -1814,6 +1814,22 @@ const shortenToDate = longDate => longDate.slice(0, longDate.indexOf(','));
 const maskify = cc => cc.length <= 4 ? cc : `${'#'.repeat(cc.length - 4)}${cc.substr(cc.length - 4)}`;
 ```
 
+[Tail Swap](https://www.codewars.com/kata//5868812b15f0057e05000001)
+```javascript
+function tailSwap(arr) {
+  let arr0 = arr[0].split(':');
+  let arr1 = arr[1].split(':');
+  return [arr0[0] + ':' + arr1[1], arr1[0] + ':' + arr0[1]];
+}
+```
+
+[Vowel remover](https://www.codewars.com/kata//5547929140907378f9000039)
+```javascript
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, "");
+}
+
+
 
 
 
