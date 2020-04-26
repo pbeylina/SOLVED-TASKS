@@ -1842,6 +1842,24 @@ function DNAtoRNA(dna) {
 const getNumberFromString = s => +s.replace(/\D/g, "");
 ```
 
+[FIXME: Replace all dots](https://www.codewars.com/kata//596c6eb85b0f515834000049)
+```javascript
+const replaceDots = function(str) {
+  return str.replace(/[.]/g, '-');
+}
+```
+[Fake Binary](https://www.codewars.com/kata//57eae65a4321032ce000002d)
+```javascript
+FilterString = function(value) {
+  let num = '';
+  for (let i = 0; i < value.length; i++) {
+    if (isNaN (value[i]) === false) 
+     num += value[i];
+  }
+  return +num; 
+}
+```
+
 
 
 
