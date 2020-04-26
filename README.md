@@ -1828,6 +1828,19 @@ function tailSwap(arr) {
 function shortcut(string) {
   return string.replace(/[aeiou]/g, "");
 }
+```
+
+[DNA to RNA Conversion](https://www.codewars.com/kata//5556282156230d0e5e000089)
+```javascript
+function DNAtoRNA(dna) {
+  return dna.replace(/[T]/g,'U');
+}
+```
+
+[Get number from string](https://www.codewars.com/kata//57a37f3cbb99449513000cd8)
+```javascript
+const getNumberFromString = s => +s.replace(/\D/g, "");
+```
 
 
 
