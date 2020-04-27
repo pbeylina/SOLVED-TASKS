@@ -1867,6 +1867,24 @@ function DNAStrand(dna) {
 }
 ```
 
+[Correct the mistakes of the character recognition software](https://www.codewars.com/kata//577bd026df78c19bca0002c0)
+```javascript
+function correct(string) {
+  return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
+}
+```
+
+[Exclamation marks series #2: Remove all exclamation marks from the end of sentence](https://www.codewars.com/kata//57faece99610ced690000165)
+```javascript
+function remove(s) {
+  return s.replace(/!*$/g, '');
+}
+```
+
+[Contamination #1 -String-](https://www.codewars.com/kata//596fba44963025c878000039)
+```javascript
+const contamination = (text, char) => !text && !char ? '' : text.replace(text, char.repeat (text.length));
+```
 
 
 
