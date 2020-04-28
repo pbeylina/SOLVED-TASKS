@@ -1886,6 +1886,20 @@ function remove(s) {
 const contamination = (text, char) => !text && !char ? '' : text.replace(text, char.repeat (text.length));
 ```
 
+[Reversed Words](https://www.codewars.com/kata//51c8991dee245d7ddf00000e)
+```javascript
+function reverseWords(str) {
+  return str.split(' ').reverse().join(' '); 
+}
+```
+
+[Descending Order](https://www.codewars.com/kata//5467e4d82edf8bbf40000155)
+```javascript
+function digitize(n) {
+return (n + '').split('').map(Number).reverse();
+}
+```
+
 
 
 
