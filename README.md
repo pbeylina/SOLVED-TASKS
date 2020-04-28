@@ -1898,7 +1898,19 @@ function reverseWords(str) {
 function digitize(n) {
 return (n + '').split('').map(Number).reverse();
 }
+
+
+function digitize(n) {
+  let str = n + '';
+  let res = [];
+  for (let i = str.length - 1; i >= 0; i--) {
+    res.push(+str[i]);
+  }
+  return res;
+} 
 ```
+
+
 
 
 
