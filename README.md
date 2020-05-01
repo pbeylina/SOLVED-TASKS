@@ -1940,6 +1940,27 @@ function reverse(string) {
 }
 ```
 
+[Highest and Lowest](https://www.codewars.com/kata//554b4ac871d6813a03000035)
+```javascript
+function highAndLow(num) {
+  let arr = num.split(' ').map(el => +el).sort((a, b) => a - b);
+  return arr[arr.length-1] + ' ' + arr[0];
+}
+```
+
+[Can Santa save Christmas?](https://www.codewars.com/kata//5857e8bb9948644aa1000246)
+```javascript
+function determineTime(dur) {
+  let time = 0;
+  let m;
+  for (let i = 0; i < dur.length; i++) {
+    m = dur[i].split(':').map(el => +el);
+    time += m[0] * 3600 + m[1] * 60 + m[2];
+  }
+  return time / 3600 <= 24;
+}
+```
+
 
 
 
