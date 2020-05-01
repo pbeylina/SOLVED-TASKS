@@ -1922,11 +1922,25 @@ function findLongest(str) {
   let longest = 0;
   for (let i = 0; i < spl.length; i++) {
     if (spl[i].length > longest) longest = spl[i].length;
-      else   longest = longest;
+      else longest = longest;
     }
   return longest;
 }
 ```
+
+[Convert a string to an array](https://www.codewars.com/kata//57e76bc428d6fbc2d500036d)
+```javascript
+const stringToArray = string => string.split(' ');
+```
+
+[Reversing Words in a String](https://www.codewars.com/kata//57a55c8b72292d057b000594)
+```javascript
+function reverse(string) {
+  return string.split(' ').reverse().join(' ');
+}
+```
+
+
 
 
 
