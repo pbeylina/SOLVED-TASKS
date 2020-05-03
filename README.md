@@ -1961,6 +1961,34 @@ function determineTime(dur) {
 }
 ```
 
+[Every possible sum of two digits](https://www.codewars.com/kata//5b4e474305f04bea11000148)
+```javascript
+function digits(num) {
+  let str = num + '';
+  let arr = [];
+  for (let i = 0; i < str.length; i++) {
+    for(let j = i + 1; j < str.length; j++) {
+      arr.push(+(str[i]) + +(str[j]));
+    }
+  }
+  return arr;
+}
+```
+
+[Training JS #12: loop statement --for..in and for..of](https://www.codewars.com/kata//5722b3f0bd5583cf44001000)
+```javascript
+function giveMeFive(obj) {
+  let arr = [];
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      if (key.length === 5 ) arr.push(key);
+      if (obj[key].length === 5) arr.push(obj[key]);
+    }
+  }
+  return arr;
+}  
+```
+
 
 
 
