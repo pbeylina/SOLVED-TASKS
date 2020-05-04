@@ -1989,6 +1989,40 @@ function giveMeFive(obj) {
 }  
 ```
 
+[Welcome!](https://www.codewars.com/kata//577ff15ad648a14b780000e7)
+```javascript
+function greet(language) {
+  const list = {
+  english: 'Welcome',
+  czech: 'Vitejte',
+  danish: 'Velkomst',
+  dutch: 'Welkom',
+  estonian: 'Tere tulemast',
+  finnish: 'Tervetuloa',
+  flemish: 'Welgekomen',
+  french: 'Bienvenue',
+  german: 'Willkommen',
+  irish: 'Failte',
+  italian: 'Benvenuto',
+  latvian: 'Gaidits',
+  lithuanian: 'Laukiamas',
+  polish: 'Witamy',
+  spanish: 'Bienvenido',
+  swedish: 'Valkommen',
+  welsh: 'Croeso',
+  }
+  return list[language]||'Welcome';
+}
+```
+
+[Duck Duck Goose](https://www.codewars.com/kata//582e0e592029ea10530009ce)
+```javascript
+function duckDuckGoose(players, goose) {
+  let val = (goose - 1) % players.length;
+  return players[val].name;
+}
+```
+
 
 
 
