@@ -2023,6 +2023,26 @@ function duckDuckGoose(players, goose) {
 }
 ```
 
+[Number-Star ladder](https://www.codewars.com/kata//5631213916d70a0979000066)
+```javascript
+function pattern(n) {
+  let res = '1\n';
+  for(let i = 1; i < n; i++) {
+    res += '1' + '*'.repeat(i) + (i + 1) + '\n';
+  }
+  return res.slice(0, -1);
+}
+```
+
+[Make a function that does arithmetic!](https://www.codewars.com/kata//583f158ea20cfcbeb400000a)
+```javascript
+function arithmetic(a, b, operator) {
+  const action = {add : (a + b), subtract : (a - b), multiply : (a * b), divide : (a / b)};
+  return action[operator];
+}
+
+```
+
 
 
 
