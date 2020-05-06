@@ -2043,6 +2043,36 @@ function arithmetic(a, b, operator) {
 
 ```
 
+[makeBackronym](https://www.codewars.com/kata//55805ab490c73741b7000064)
+```javascript
+var makeBackronym = function(str) {
+  let res = '';
+  for (let i = 0; i < str.length; i++) {
+      res += dict[str[i].toUpperCase()] + ' ';
+  }
+  return res.trim()
+}
+```
+
+[makeBackronym](https://www.codewars.com/kata//55805ab490c73741b7000064)
+```javascript
+const makeBackronym = s => s.split('').reduce((acc, el) => acc.concat(dict[el.toUpperCase()]) + ' ', '').trim();
+```
+
+[Check three and two](https://www.codewars.com/kata//5a9e86705ee396d6be000091)
+```javascript
+function checkThreeAndTwo(arr) {
+  const obj = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) obj[arr[i]] ++;
+      else obj[arr[i]] = 1;
+  }
+    for(let i in obj) {
+      if (obj[i] < 2 || obj[i] > 3) return false;
+    }
+    return true;
+}
+```
 
 
 
