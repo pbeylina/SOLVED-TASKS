@@ -2083,6 +2083,24 @@ function match(candidate, job) {
   }
 ```
 
+[Numbers to Objects](https://www.codewars.com/kata//57ced2c1c6fdc22123000316)
+```javascript
+function numObj(s) {
+  let res = [];
+  for (let i = 0; i < s.length; i++) {
+    const obj = {};
+    obj[s[i]] = String.fromCodePoint(s[i]);
+    res.push(obj)
+  }
+  return res;
+}
+```
+
+[Add property to every object in array](https://www.codewars.com/kata//54e8c3e89e2ae6f4900005a1)
+```javascript
+questions.map(el => el.usersAnswer = null);
+```
+
 
 
 
