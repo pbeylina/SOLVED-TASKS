@@ -2074,6 +2074,14 @@ function checkThreeAndTwo(arr) {
 }
 ```
 
+[Job Matching #1](https://www.codewars.com/kata//56c22c5ae8b139416c00175d)
+```javascript
+function match(candidate, job) {
+  job.maxSalary = job.maxSalary + (candidate.minSalary * 0.1);
+  if (!candidate.minSalary  || !job.maxSalary) throw new Error ('');
+  return candidate.minSalary <= job.maxSalary;
+  }
+```
 
 
 
