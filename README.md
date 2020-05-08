@@ -2101,7 +2101,24 @@ function numObj(s) {
 questions.map(el => el.usersAnswer = null);
 ```
 
+[Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages](https://www.codewars.com/kata//5828713ed04efde70e000346)
+```javascript
+function countLanguages(list) {
+  const obj = {};
+  for(let i = 0; i < list.length; i++) {
+    if (obj[list[i].language]) obj[list[i].language]++;
+      else obj[list[i].language] = 1; 
+  }
+  return obj;
+}
+```
 
+[Jaden Casing Strings](https://www.codewars.com/kata//5390bac347d09b7da40006f6)
+```javascript
+String.prototype.toJadenCase = function () {
+return this.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ');
+};
+```
 
 
 
