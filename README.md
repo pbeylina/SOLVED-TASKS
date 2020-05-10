@@ -2137,6 +2137,20 @@ const frenchFries = 10;
 const totalPrice = sandwiches * 8 + salads * 7 + wraps * 6.5 + frenchFries * 1.2;
 ```
 
+[Grasshopper - Order of operations](https://www.codewars.com/kata//560ecf0cb040de130e00007d)
+```javascript
+function orderOperations () {
+  return (2 + 2) * (2 + 2) * 2;
+}
+```
+
+[Fix the Bugs (Syntax) - My First Kata](https://www.codewars.com/kata//56aed32a154d33a1f3000018)
+```javascript
+function myFirstKata(a, b) {
+  return typeof(a) !== "number" || typeof(b) !== "number" ? false : a % b + b % a;
+}
+```
+
 
 
 
