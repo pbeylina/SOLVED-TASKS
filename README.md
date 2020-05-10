@@ -2120,6 +2120,23 @@ return this.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ');
 };
 ```
 
+[Grasshopper - Messi Goals](https://www.codewars.com/kata//55ca77fa094a2af31f00002a)
+```javascript
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+```
+
+[Grasshopper - Shopping list (retired)](https://www.codewars.com/kata//560c31275c39c481c4000022)
+```javascript
+const sandwiches = 4;
+const salads = 6;
+const wraps = 5 ;
+const frenchFries = 10;
+const totalPrice = sandwiches * 8 + salads * 7 + wraps * 6.5 + frenchFries * 1.2;
+```
+
 
 
 
