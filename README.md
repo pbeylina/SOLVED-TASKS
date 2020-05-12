@@ -2151,6 +2151,23 @@ function myFirstKata(a, b) {
 }
 ```
 
+[Training JS #6: Basic data types--Boolean and conditional statements if..else](https://www.codewars.com/kata//571f832f07363d295d001ba8)
+```javascript
+const trueOrFalse = val => !val ? 'false' : 'true';
+```
+
+[Grasshopper - Debug](https://www.codewars.com/kata//55cb854deb36f11f130000e1)
+```javascript
+function weatherInfo(temp) {
+  const c = (temp - 32) * (5 / 9);
+  if (c > 0) { 
+    return (`${c} is above freezing temperature`)
+  } else {
+    return (`${c} is freezing temperature`)
+  }
+}
+```
+
 
 
 
