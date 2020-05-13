@@ -2168,6 +2168,30 @@ function weatherInfo(temp) {
 }
 ```
 
+[Fix your code before the garden dies!](https://www.codewars.com/kata//57158fb92ad763bb180004e7)
+```javascript
+function rainAmount(mm) {
+  let exactlyWater = 40;
+  if (mm < 40) {
+    return `You need to give your plant ${exactlyWater - mm}mm of water`;
+  } else {
+    return "Your plant has had more than enough water for today!";
+  }
+}
+```
+
+[Area or Perimeter](https://www.codewars.com/kata//5ab6538b379d20ad880000ab)
+```javascript
+function fuelPrice(l, price) {
+  if (l > 0 && l < 2) return +(l * price).toFixed(2);
+  if (l < 4 && l >= 2) return +(l * (price - 0.05)).toFixed(2);
+  if (l < 6 && l >= 4) return +(l * (price - 0.10)).toFixed(2);
+  if (l < 8 && l >= 6) return +(l * (price - 0.15)).toFixed(2);
+  if (l < 10 && l >= 8) return +(l * (price - 0.20)).toFixed(2);
+  if (l >= 10) return +(l * (price - 0.25)).toFixed(2);
+}
+```
+
 
 
 
