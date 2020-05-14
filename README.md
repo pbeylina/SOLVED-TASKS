@@ -2192,6 +2192,20 @@ function fuelPrice(l, price) {
 }
 ```
 
+[Fuel Calculator](https://www.codewars.com/kata//57b58827d2a31c57720012e8)
+```javascript
+function fuelPrice(l, price) {
+  if (l > 0 && l < 2) return +(l * price).toFixed(2);
+  if (l < 4 && l >= 2) return +(l * (price - 0.05)).toFixed(2);
+  if (l < 6 && l >= 4) return +(l * (price - 0.10)).toFixed(2);
+  if (l < 8 && l >= 6) return +(l * (price - 0.15)).toFixed(2);
+  if (l < 10 && l >= 8) return +(l * (price - 0.20)).toFixed(2);
+  if (l >= 10) return +(l * (price - 0.25)).toFixed(2);
+}
+```
+
+
+
 
 
 
