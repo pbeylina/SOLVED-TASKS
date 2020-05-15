@@ -2204,6 +2204,25 @@ function fuelPrice(l, price) {
 }
 ```
 
+[Holiday VI - Shark Pontoon](https://www.codewars.com/kata//57e921d8b36340f1fd000059)
+```javascript
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+  let sharkTime = sharkDistance / sharkSpeed;
+  let youTime = pontoonDistance / youSpeed;
+  if (dolphin === true && youTime <= sharkTime * 2) {
+    return 'Alive!';
+  }
+    else if (dolphin === false && youTime <= sharkTime) { 
+      return 'Alive!';
+  } else return 'Shark Bait!';
+}
+```
+
+
+
+
+
+
 
 
 
