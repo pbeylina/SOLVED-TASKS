@@ -2218,6 +2218,18 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
 }
 ```
 
+[Plural](https://www.codewars.com/kata//52ceafd1f235ce81aa00073a)
+```javascript
+const plural = n => n !== 1 ? true : false;
+```
+
+[Watermelon](https://www.codewars.com/kata//55192f4ecd82ff826900089e)
+```javascript
+const divide = weight => weight !== 2 && weight % 2 === 0 ? true : false;
+```
+
+
+
 
 
 
