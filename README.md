@@ -2228,6 +2228,15 @@ const plural = n => n !== 1 ? true : false;
 const divide = weight => weight !== 2 && weight % 2 === 0 ? true : false;
 ```
 
+[Leap Years](https://www.codewars.com/kata//526c7363236867513f0005ca)
+```javascript
+function isLeapYear(year) {
+  if (year % 4 !== 0)  return false;
+  if (year % 100 !== 0)  return true;
+  if (year % 400 === 0 )  return true;
+  else return false;  
+}
+```
 
 
 
