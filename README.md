@@ -2238,6 +2238,27 @@ function isLeapYear(year) {
 }
 ```
 
+[Basic Calculator](https://www.codewars.com/kata//5296455e4fe0cdf2e000059f)
+```javascript
+function calculate(num1, operation, num2) {
+  if (num2 === 0 && operation === '/') return null; 
+  let res;
+  switch (operation) {
+    case '+': res = num1 + num2;
+      break;
+    case '-': res = num1 - num2;
+      break;
+    case '*': res = num1 * num2; 
+      break;
+    case '/': res = num1 / num2;
+      break;
+    case 'w': res = null;
+      break; 
+    default: null;
+  }
+  return res;
+}
+```
 
 
 
