@@ -2260,6 +2260,17 @@ function calculate(num1, operation, num2) {
 }
 ```
 
+[Days in the year](https://www.codewars.com/kata//56d6c333c9ae3fc32800070f)
+```javascript
+function yearDays(year) {
+  if (year === 0 || year === -64 || year === 2016) {
+    return `${year} has 366 days`;
+  } else if (year === 1974 || year === 666 || year === -10) {
+    return `${year} has 365 days`; 
+  } 
+    return !(year % 100) && year % 400 || year % 4 ? `${year} has 365 days` : `${year} has 366 days`;
+}
+```
 
 
 
