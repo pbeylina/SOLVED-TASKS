@@ -2279,6 +2279,10 @@ function minMax(arr) {
 }
 ```
 
+[N-th Power](https://www.codewars.com/kata//57d814e4950d8489720008db)
+```javascript
+const index = (array, n) => n > array.length - 1 ? -1 : Math.pow(array[n], n);
+```
 
 
 
