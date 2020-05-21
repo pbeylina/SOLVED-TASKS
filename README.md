@@ -2284,7 +2284,12 @@ function minMax(arr) {
 const index = (array, n) => n > array.length - 1 ? -1 : Math.pow(array[n], n);
 ```
 
-
+[Semi-Optional](https://www.codewars.com/kata//521cd52e790405a74800032c)
+```javascript
+function wrap (value) {
+  return {value};
+}
+```
 
 
 
