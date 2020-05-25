@@ -2323,7 +2323,29 @@ var rooms = {
 
 [Coding Meetup #2 - Higher-Order Functions Series - Greet developers](https://www.codewars.com/kata//58279e13c983ca4a2a00002a)
 ```javascript
+function greetDevelopers(list) {
+  for (let el of list) {
+      el.greeting = `Hi ${el.firstName}, what do you like the most about ${el.language}?`;
+  }
+  return list;
+}
+```
+
+[Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe](https://www.codewars.com/kata//582746fa14b3892727000c4f)
+```javascript
 const countDevelopers = list => list.filter(el => el.continent === 'Europe' && el.language === 'JavaScript').length;
+```
+
+[TV channels](https://www.codewars.com/kata//5836dce6966f8d1d43000007)
+```javascript
+function redarr(arr) {
+  const array = arr.filter((el, i) => i === arr.lastIndexOf(el)).sort();
+  const obj = {};
+  for (let i = 0; i < array.length; ++i) {
+    obj[i] = array[i];
+  }
+  return obj;
+}
 ```
 
 
