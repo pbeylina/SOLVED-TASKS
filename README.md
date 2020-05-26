@@ -2348,6 +2348,21 @@ function redarr(arr) {
 }
 ```
 
+[Ironman Triathlon](https://www.codewars.com/kata//57d001b405c186ccb6000304)
+```javascript
+function iTri(s) {
+  const dist = 2.4 + 112 + 26.2;
+  if (s === 0) return 'Starting Line... Good Luck!';
+  if (s <= 2.4) return {'Swim': `${(dist - s).toFixed(2)} to go!`};
+  if (s <= 114.4) return {'Bike': `${(dist - s).toFixed(2)} to go!`};
+  if (dist - s > 10) return {'Run': `${(dist - s).toFixed(2)} to go!`};
+  if (s < dist) return {'Run': 'Nearly there!'};
+  else return "You're done! Stop running!";
+}
+```
+
+
+
 
 
 
