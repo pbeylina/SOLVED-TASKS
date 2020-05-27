@@ -2361,6 +2361,28 @@ function iTri(s) {
 }
 ```
 
+[makeBackronym](https://www.codewars.com/kata//55805ab490c73741b7000064)
+```javascript
+const makeBackronym = s => s.split('').reduce((acc, el) => acc.concat(dict[el.toUpperCase()]) + ' ', '').trim();
+```
+
+[What is my name score? #1](https://www.codewars.com/kata//576a29ab726f4bba4b000bb1)
+```javascript
+function nameScore(name) {
+  let count = 0;
+  let str = name.toUpperCase().split('');
+  for (let el of str) {
+    for (let key in alpha) {
+      if(key.includes(el)) {
+      count += alpha[key];
+      }
+    }
+  }
+  return {[name]: count};
+}
+```
+
+
 
 
 
