@@ -2382,6 +2382,14 @@ function nameScore(name) {
 }
 ```
 
+[The Office I - Outed](https://www.codewars.com/kata//57ecf6efc7fe13eb070000e1)
+```javascript
+function outed(meet, boss) {
+  if (meet[boss]) meet[boss] *= 2;
+  const arr = Object.values(meet);
+  return arr.reduce((acc, el) => acc + el, 0) / arr.length <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+}
+```
 
 
 
