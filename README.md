@@ -2391,6 +2391,16 @@ function outed(meet, boss) {
 }
 ```
 
+[Permute a Palindrome](https://www.codewars.com/kata//58ae6ae22c3aaafc58000079)
+```javascript
+function permuteAPalindrome (input) { 
+  let obj = {};
+  for (let i of input) {
+    obj[i] ? delete obj[i] : obj[i] = 1;
+  }
+  return Object.keys(obj).length <= 1;
+}
+```
 
 
 
