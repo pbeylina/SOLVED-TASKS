@@ -2415,6 +2415,23 @@ function daysRepresented(trips) {
 }
 ```
 
+[Most valuable character](https://www.codewars.com/kata//5dd5128f16eced000e4c42ba)
+```javascript
+function solve(str) {
+  let maxDiff = 0;
+  let result = 'z';
+  for (let x of str) {
+    let diff = str.lastIndexOf(x) - str.indexOf(x);
+    if (maxDiff < diff || maxDiff == diff && x < result) {
+       result = x;
+       maxDiff = diff;
+     }
+   }
+   return result;
+}
+```
+
+
 
 
 
