@@ -2402,6 +2402,18 @@ function permuteAPalindrome (input) {
 }
 ```
 
+[How many days are we represented in a foreign country?](https://www.codewars.com/kata//58e93b4706db4d24ee000096)
+```javascript
+function daysRepresented(trips) {
+  const obj = {};
+  for (let i = 0; i < trips.length; i++) {
+    for (let j = trips[i][0]; j <= trips[i][1]; j++) {
+      if (!obj[j]) obj[j] = 1;
+    }
+  }
+  return Object.keys(obj).length;
+}
+```
 
 
 
