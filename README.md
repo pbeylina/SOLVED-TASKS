@@ -2449,6 +2449,22 @@ function getGrade (s1, s2, s3) {
 };
 ```
 
+[String Reordering](https://www.codewars.com/kata//5b047875de4c7f9af800011b)
+```javascript
+function sentence(List) {
+  const res = [];
+  const arr = List.sort((a, b) => Object.keys(a)[0] - Object.keys(b)[0]);
+  for (let el of arr) {
+    res.push(Object.values(el))
+  }
+  return res.join(' ');    
+}
+```
+
+
+
+
+
 
 
 
