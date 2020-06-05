@@ -2515,6 +2515,23 @@ function stairs(n) {
 }
 ```
 
+[Test's results](https://www.codewars.com/kata//599db0a227ca9f294b0000c8)
+```javascript
+function testResult(array) {
+  const dict = {h : 0,  a : 0,  l : 0,};
+  const average = +(array.reduce((a, el) => a + el, 0) / array.length).toFixed(3);
+  for (let el of array) {
+    if (el > 8) {
+      dict.h++;
+    } else if (el > 6) {
+      dict.a++; 
+    } else {
+      dict.l++;
+    };
+  }
+  return  dict.h === array.length ? [average, dict, 'They did well'] : [average, dict];
+}
+```
 
 
 
