@@ -2544,6 +2544,23 @@ function createDict(keys, values) {
 }
 ```
 
+[Grasshopper - Create the rooms](https://www.codewars.com/kata//56a29b237e9e997ff2000048)
+```javascript
+const rooms = {};
+rooms[1] = {name: 'red', 
+            description: 'sand',
+            completed: 'pass',
+            },
+rooms[2] = {name: 'blue', 
+            description: 'water',
+            completed: 'fail',
+            },
+rooms[3] = {name: 'green', 
+            description: 'trees',
+            completed: 'over',
+            }
+```
+
 
 
 
