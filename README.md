@@ -2571,6 +2571,12 @@ const cutCube = (volume, n) => !(Math.cbrt(n) % 1) && !(Math.cbrt(volume / n) % 
 const cutCube = (volume, n) => Number.isInteger(Math.cbrt(volume / n)) && Number.isInteger(Math.cbrt(n)) ? true : false;
 ```
 
+[Find variable which breaks strict comparison!](https://www.codewars.com/kata//560f8d41cf6e1fe5c900002e)
+```javascript
+const findStrangeValue = x => NaN;
+```
+
+
 
 
 
