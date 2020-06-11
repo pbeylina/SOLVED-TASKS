@@ -2576,6 +2576,15 @@ const cutCube = (volume, n) => Number.isInteger(Math.cbrt(volume / n)) && Number
 const findStrangeValue = x => NaN;
 ```
 
+[Alternating between three values](https://www.codewars.com/kata//596776fbb4f24d0d82000141)
+```javascript
+function f(x, cc) { 
+  if (x === cc.a) return cc.b;
+  if (x === cc.b) return cc.c;
+  if (x === cc.c) return cc.a;
+}
+```
+
 
 
 
