@@ -2585,6 +2585,21 @@ function f(x, cc) {
 }
 ```
 
+[Difference of 2](https://www.codewars.com/kata//5340298112fa30e786000688)
+```javascript
+function twosDifference(input) {
+  input.sort((a, b) => a - b);
+  const arr = [];
+  for(let i = 0; i < input.length - 1; i++) {
+    for (let j = 1; j < input.length; j++) {
+      if (input[i] - input[j] === -2) arr.push([input[i], input[j]])
+    }
+  } 
+ return arr;
+}
+```
+
+
 
 
 
