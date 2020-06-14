@@ -2599,6 +2599,18 @@ function twosDifference(input) {
 }
 ```
 
+[Improving Math.round(x)](https://www.codewars.com/kata//56be025f9347a066c7000e4f)
+```javascript
+const cutCube = (volume,n) => !(Math.cbrt(n) % 1) && !(Math.cbrt(volume / n) % 1);
+```
+
+[Improving Math.round(x)](https://www.codewars.com/kata//56be025f9347a066c7000e4f)
+```javascript
+const cutCube = (volume, n) => Number.isInteger(Math.cbrt(volume / n)) && Number.isInteger(Math.cbrt(n)) ? true : false;
+```
+
+
+
 
 
 
