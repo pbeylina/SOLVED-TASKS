@@ -2601,12 +2601,20 @@ function twosDifference(input) {
 
 [Improving Math.round(x)](https://www.codewars.com/kata//56be025f9347a066c7000e4f)
 ```javascript
-const cutCube = (volume,n) => !(Math.cbrt(n) % 1) && !(Math.cbrt(volume / n) % 1);
+Math.roundTo = function (number, precision) {
+  return +number.toFixed(precision);
+}
 ```
 
-[Improving Math.round(x)](https://www.codewars.com/kata//56be025f9347a066c7000e4f)
+[Sum of Minimums!](https://www.codewars.com/kata//5d5ee4c35162d9001af7d699)
 ```javascript
-const cutCube = (volume, n) => Number.isInteger(Math.cbrt(volume / n)) && Number.isInteger(Math.cbrt(n)) ? true : false;
+function sumOfMinimums(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    count +=  Math.min(...arr[i]);
+  }
+  return count;
+}
 ```
 
 
