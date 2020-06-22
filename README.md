@@ -2654,6 +2654,21 @@ function generateIntegers(m, n) {
 }
 ```
 
+[Rock Off!](https://www.codewars.com/kata//5b097da6c3323ac067000036)
+```javascript
+function solve(a, b) {
+  let countA = 0;
+  let countB = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > b[i]) countA++;
+    if (a[i] < b[i]) countB++;
+  } 
+  return (countA === countB) ? `${countA}, ${countB}: that looks like a "draw"! Rock on!` :
+  (countA > countB) ? `${countA}, ${countB}: Alice made "Kurt" proud!` : 
+  `${countA}, ${countB}: Bob made "Jeff" proud!`;
+}
+```
+
 
 
 
