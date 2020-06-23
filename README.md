@@ -2683,6 +2683,14 @@ function wordscore(word) {
 }
 ```
 
+[Well of Ideas - Harder Version](https://www.codewars.com/kata//57f22b0f1b5432ff09001cab)
+```javascript
+function well(x) {
+  const y = [].concat(...x).map(el => el.toString().toLowerCase()).filter(el => el === 'good').length; 
+  return y > 2 ? 'I smell a series!': y < 1 ? 'Fail!' : 'Publish!'; 
+}
+```
+
 
 
 
