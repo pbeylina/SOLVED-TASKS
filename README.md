@@ -2701,6 +2701,19 @@ const disemvowel = str => str.replace(/[aeuio]/gi, '');
 const digits = n => n.toString().length;
 ```
 
+[Row Weights](https://www.codewars.com/kata//5abd66a5ccfd1130b30000a9)
+```javascript
+function rowWeights(arr) {
+  let wight1 = 0;
+  let wight2 = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2) wight2 += arr[i];
+      else wight1 += arr[i];
+  }
+  return [wight1, wight2];
+}
+```
+
 
 
 
