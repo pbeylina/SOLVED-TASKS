@@ -2759,6 +2759,20 @@ function multiplicationTable(size) {
 }
 ```
 
+[Filter out the geese](https://www.codewars.com/kata//57ee4a67108d3fd9eb0000e7)
+```javascript
+function gooseFilter (birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  const res = [];
+  for (let  i = 0; i < birds.length; i++) {
+    if (!geese.includes(birds[i])) {
+      res.push(birds[i]);
+    }
+  }
+  return res;
+}
+```
+
 
 
 
