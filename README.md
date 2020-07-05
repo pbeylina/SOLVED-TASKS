@@ -2773,6 +2773,22 @@ function gooseFilter (birds) {
 }
 ```
 
+[Moving Zeros To The End](https://www.codewars.com/kata//52597aa56021e91c93000cb0)
+```javascript
+function moveZeros (arr) {
+  const res = [];
+  let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== 0) res.push(arr[i]);
+        else count++;
+    }
+    for (let i = 0; i < count; i++) {
+      res.push(0)
+    }
+    return res;
+}
+```
+
 
 
 
