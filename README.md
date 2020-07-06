@@ -2795,6 +2795,10 @@ items = [];
 items.push({a: "b", c: "d"});
 ```
 
+[Basic Training: Add item to an Array](https://www.codewars.com/kata//511f0fe64ae8683297000001)
+```javascript
+websites.push("codewars");
+```
 
 
 
