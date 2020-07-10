@@ -2804,8 +2804,19 @@ websites.push("codewars");
 ```
 function bloodAlcoholContent(drinks, weight, sex, time) {
   return +(drinks.ounces * drinks.abv * 5.14 / weight * (sex === 'male' ? 0.73 : 0.66) - 0.015 * time).toFixed(4);
-} 
+}
 ```
+
+
+[Sum of Digits / Digital Root](https://www.codewars.com/kata//541c8630095125aba6000c00)
+```javascript
+function digital_root(n) {
+  n = n.toString().split('').reduce((acc, el) => acc + +el, 0);
+  return n < 10 ? n : digital_root(n);
+}
+```
+
+
 
 
 
