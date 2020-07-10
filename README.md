@@ -2816,6 +2816,18 @@ function digital_root(n) {
 }
 ```
 
+[Return the first M multiples of N](https://www.codewars.com/kata//593c9175933500f33400003e)
+```javascript
+function multiples(m, n) {
+  const arr = [];
+  while (m > 0) {
+    arr.unshift(m * n);
+    m--;
+  }
+  return arr;
+}
+```
+
 
 
 
