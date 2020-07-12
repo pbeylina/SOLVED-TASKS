@@ -2828,6 +2828,15 @@ function multiples(m, n) {
 }
 ```
 
+[Freudian translator](https://www.codewars.com/kata//5713bc89c82eff33c60009f7)
+```javascript
+function toFreud(string) {
+  if (!string) return '';
+  return string.split(' ').map(el => 'sex').join(' ');
+}
+```
+
+
 
 
 
