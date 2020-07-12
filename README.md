@@ -2836,6 +2836,15 @@ function toFreud(string) {
 }
 ```
 
+[Training JS #15: Methods of Number object--toFixed(), toExponential() and toPrecision()](https://www.codewars.com/kata//57256064856584bc47000611)
+```javascript
+function howManySmaller(arr, n) {
+  let count = 0;
+  return arr.reduce((a, el) => el.toFixed(2) < n ? a + 1 : a, 0);
+}
+```
+
+
 
 
 
