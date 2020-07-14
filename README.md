@@ -2852,6 +2852,11 @@ function cutIt(arr) {
 }
 ```
 
+[lucky number](https://www.codewars.com/kata//55afed09237df73343000042)
+```javascript
+const isLucky = n => n % 9 === 0 ? true : false;
+```
+
 
 
 
