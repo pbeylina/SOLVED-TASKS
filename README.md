@@ -2857,6 +2857,12 @@ function cutIt(arr) {
 const isLucky = n => n % 9 === 0 ? true : false;
 ```
 
+[Find the lucky numbers](https://www.codewars.com/kata//580435ab150cca22650001fb)
+```javascript
+const filterLucky = x => x.filter(x => (x + '').includes('7'));
+```
+
+
 
 
 
