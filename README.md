@@ -2872,6 +2872,11 @@ const one = (arr, fun) => arr.filter(fun).length === 1;
 const solve = arr => arr.find(el => arr.indexOf(-el) == -1);
 ```
 
+[Two to One](https://www.codewars.com/kata//5656b6906de340bd1b0000ac)
+```
+const longest = (s1, s2) => (s1 + s2).split('').sort().join('').replace(/(.)\1+/g, "$1");
+```
+
 
 
 
