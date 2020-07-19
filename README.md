@@ -2868,13 +2868,21 @@ const one = (arr, fun) => arr.filter(fun).length === 1;
 ```
 
 [Array element parity](https://www.codewars.com/kata//5a092d9e46d843b9db000064)
-```
+```javascript
 const solve = arr => arr.find(el => arr.indexOf(-el) == -1);
 ```
 
+
 [Two to One](https://www.codewars.com/kata//5656b6906de340bd1b0000ac)
-```
+```javascript
 const longest = (s1, s2) => (s1 + s2).split('').sort().join('').replace(/(.)\1+/g, "$1");
+```
+
+[Add new item (collections are passed by reference)](https://www.codewars.com/kata//566dc05f855b36a031000048)
+```javascript
+function addExtra(listOfNumbers) {
+  return listOfNumbers.concat(0);
+}
 ```
 
 
