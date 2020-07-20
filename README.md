@@ -2872,7 +2872,6 @@ const one = (arr, fun) => arr.filter(fun).length === 1;
 const solve = arr => arr.find(el => arr.indexOf(-el) == -1);
 ```
 
-
 [Two to One](https://www.codewars.com/kata//5656b6906de340bd1b0000ac)
 ```javascript
 const longest = (s1, s2) => (s1 + s2).split('').sort().join('').replace(/(.)\1+/g, "$1");
@@ -2884,6 +2883,15 @@ function addExtra(listOfNumbers) {
   return listOfNumbers.concat(0);
 }
 ```
+
+[Training JS #29: methods of arrayObject---concat() and join()](https://www.codewars.com/kata//5731861d05d14d6f50000626)
+```javascript
+const bigToSmall = arr => [].concat(...arr).sort((a, b) => b - a).join('>');
+```
+
+
+
+
 
 
 
