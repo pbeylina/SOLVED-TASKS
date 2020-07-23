@@ -2894,6 +2894,13 @@ const bigToSmall = arr => [].concat(...arr).sort((a, b) => b - a).join('>');
 const sortByLength = array => array.sort((a, b) => a.length - b.length);
 ```
 
+[Ones and Zeros](https://www.codewars.com/kata//578553c3a1b8d5c40300037c)
+```javascript
+const binaryArrayToNumber = arr => parseInt([...arr].join(''), 2);
+```
+
+
+
 
 
 
