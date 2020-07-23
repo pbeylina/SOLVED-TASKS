@@ -2867,6 +2867,12 @@ const filterLucky = x => x.filter(x => (x + '').includes('7'));
 const one = (arr, fun) => arr.filter(fun).length === 1;
 ```
 
+[Array element parity](https://www.codewars.com/kata//5a092d9e46d843b9db000064)
+```
+const solve = arr => arr.find(el => arr.indexOf(-el) == -1);
+```
+
+
 
 
 
