@@ -2899,6 +2899,21 @@ const sortByLength = array => array.sort((a, b) => a.length - b.length);
 const binaryArrayToNumber = arr => parseInt([...arr].join(''), 2);
 ```
 
+[Dominant array elements](https://www.codewars.com/kata//5a04133e32b8b998dc000089)
+```javascript
+function solve(arr) {
+  const res = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.slice(i + 1).every((el) => el < arr[i])) 
+      res.push(arr[i]);
+  }
+  return res;
+}
+```
+
+
+
+
 
 
 
