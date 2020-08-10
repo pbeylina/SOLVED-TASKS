@@ -2925,6 +2925,15 @@ function sumSquares(array) {
 }
 ```
 
+[Grasshopper - Variable Assignment Debug](https://www.codewars.com/kata//5612e743cab69fec6d000077)
+```javascript
+const a = "dev";
+const b = "Lab";
+const name = a + b;
+```
+
+
+
 
 
 
