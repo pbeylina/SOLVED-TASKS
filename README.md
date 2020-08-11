@@ -2932,6 +2932,20 @@ const b = "Lab";
 const name = a + b;
 ```
 
+[Search for letters](https://www.codewars.com/kata//52dbae61ca039685460001ae)
+```javascript
+function change(string) {
+  str = string.toLowerCase();
+  let s1 = '00000000000000000000000000'.split('');
+  let s2 = 'abcdefghijklmnopqrstuvwxyz';
+  for (let i = 0; i < s1.length; i++) {
+    if (str.includes(s2[i])) s1[i]++;
+  }
+  return s1.join('');
+}
+```
+
+
 
 
 
