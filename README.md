@@ -2945,6 +2945,21 @@ function change(string) {
 }
 ```
 
+[Custom FizzBuzz Array](https://www.codewars.com/kata//5355a811a93a501adf000ab7)
+```javascript
+function fizzBuzzCustom(s1 = 'Fizz', s2 = 'Buzz', num1 = 3, num2 = 5) {
+  let arr = [];
+  for (let i = 1; i <= 100; i++) {
+    if (i % num1 === 0 && i % num2 === 0) arr.push(s1 + s2);
+    else if (i % num1 === 0) arr.push(s1);
+    else if (i % num2 === 0) arr.push(s2);
+    else arr.push(i);
+  }
+  return arr;
+};
+```
+
+
 
 
 
