@@ -2959,6 +2959,19 @@ function fizzBuzzCustom(s1 = 'Fizz', s2 = 'Buzz', num1 = 3, num2 = 5) {
 };
 ```
 
+[Delete occurrences of an element if it occurs more than n times](https://www.codewars.com/kata//554ca54ffa7d91b236000023)
+```javascript
+function deleteNth(arr, n) {
+  let array = [];
+  for (let el of arr) {
+    if(array.filter(x => x === el).length < n) 
+    array.push(el); 
+  }
+  return array;
+}
+```
+
+
 
 
 
