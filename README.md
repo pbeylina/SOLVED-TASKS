@@ -2990,7 +2990,10 @@ function uefaEuro2016(teams, scores) {
 }
 ```
 
-
+[ES6 string addition](https://www.codewars.com/kata//582e4c3406e37fcc770001ad)
+```javascript
+const joinStrings = (str1, str2) => `${str1} ${str2}`;
+```
 
 
 
