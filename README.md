@@ -2995,6 +2995,12 @@ function uefaEuro2016(teams, scores) {
 const joinStrings = (str1, str2) => `${str1} ${str2}`;
 ```
 
+[Take the Derivative](https://www.codewars.com/kata//5963c18ecb97be020b0000a2)
+```javascript
+const derive = (coefficient, exponent) => `${coefficient * exponent}x^${exponent - 1}`; 
+```
+
+
 
 
 
