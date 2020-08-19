@@ -3011,6 +3011,11 @@ function extraPerfect(n) {
 }
 ```
 
+[Basics 03: Strings, Numbers and Calculation](https://www.codewars.com/kata//56b5dc75d362eac53d000bc8)
+```javascript
+const calculateString = str => eval(str.replace(/[^0-9+\-*/.]/g, '')).toFixed(0);
+```
+
 
 
 
